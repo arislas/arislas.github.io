@@ -1,0 +1,153 @@
+\documentclass[12pt, a4paper]{book}
+\usepackage{graphicx} % Required for inserting images
+\usepackage[utf8]{inputenc}                                          %Habilita las tildes
+\usepackage[spanish]{babel}                                          %Documento en español
+\usepackage{times}                                                   %Tipo de letra
+\usepackage[left=20mm,top=20mm,bottom=20mm,right=20mm]{geometry}     %Establece los márgenes
+\usepackage{amsmath,amssymb,yhmath}
+\usepackage{xlop}                                                    %Resuelve operaciones como en primaria.
+\usepackage[usenames]{color}
+\usepackage{eurosym}
+\usepackage{multicol}
+\usepackage{cancel}
+\usepackage{enumerate}                                               %Cambia etiquetas de enumeraciones
+\usepackage{emptypage}                                               %Borra páginas en blanco
+\usepackage{pstricks}                                                %Divisiones Ruffini
+\usepackage{polynom}                                                 %Divisiones de polinomios
+\usepackage{venndiagram}                                             %Dibuja conjuntos
+\usepackage{tikz}                                                    %Dibuja conjuntos
+\usetikzlibrary{positioning,shapes,fit,arrows,babel}                 %Librería tikz
+\usepackage{framed}\definecolor{shadecolor}{RGB}{224,238,238}        %Crea párrafos encuadrados
+\newcommand{\placeholder}[1]{\rule{3mm}{0.1mm}}                      %Print -- regardless of the input
+\newcommand{\gobble}[1]{}                                            %Print <nothing> regardless of the input
+\usepackage{verbatim}                                                %Para comentar varias líneas.
+\usepackage{multirow}                                                %Para combinar columnas.
+\usepackage[hidelinks]{hyperref}                                     %Para añadir enlaces.
+\usepackage{array}                                                   %Para centrar contenido de tablas.
+\usepackage{vwcol} %Como multicols pero con columnas de diferente ancho.
+\usetikzlibrary{datavisualization}
+\usepackage{tkz-euclide}
+\usepackage{bm} %Para poner expresiones matemáticas en negrita
+
+\providecommand{\abs}[1]{\lvert#1\rvert} % para el valor absoluto
+\providecommand{\norm}[1]{\lVert#1\rVert} % Para el módulo
+
+% Para los cuadros de código
+\usepackage{tcolorbox}
+\tcbuselibrary{listingsutf8}
+
+% Para los cuadros normales
+% Cuadro numerado para ejemplos
+\newtcolorbox[auto counter, number within=subsubsection]{ejemplos}[2][]{colback=green!5!white,colframe=green!75!black, fonttitle=\bfseries, title=Ejemplo~\thetcbcounter: #2,#1}
+
+% Cuadro numerado para sintaxis
+\newtcolorbox[auto counter, number within=subsubsection]{sintaxis}[2][]{colback=cyan!5!white,colframe=cyan!75!black, fonttitle=\bfseries, title=Sintaxis~\thetcbcounter: #2,#1}
+
+% Cuadro numerado para notas importantes
+\newtcolorbox[auto counter, number within=subsubsection]{nota}[2][]{colback=pink!5!white,colframe=pink!75!black, fonttitle=\bfseries, title=Nota~\thetcbcounter: #2,#1}
+
+% Cuadro sin numerar para ejemplos
+\newtcolorbox{ejemplo}[2][]
+{colback=green!5!white,colframe=green!75!black,
+fonttitle=\bfseries, title=Ejemplos}
+
+% Para insertar dódigo
+\usepackage{listings}
+
+\setcounter{secnumdepth}{3}                                          % para que ponga 1.1.1.1 en subsubsecciones. El número 3 es el número de sub secciones que utilizará
+\setcounter{tocdepth}{3}                                             % para que ponga subsubsecciones en el indice. El número 3 es el número de sub secciones que utilizará
+
+
+
+
+\title{CONOCIMIENTO DEL MEDIO 6}
+\author{}
+\date{}
+\setlength{\parindent}{0cm}                                          %Elimina sangrado
+\clearpage                                                           %Elimina numeración páginas en blanco
+
+\begin{document}
+
+\maketitle
+
+\begin{titlepage}
+\maketitle
+\end{titlepage}
+
+\renewcommand{\contentsname}{\'Indice}                               %Cambia el nombre del índice a "Índice"
+\tableofcontents                                                     %Índice del libro
+
+\addcontentsline{toc}{chapter}{TRIMESTRE 1}
+\part*{Trimestre 1}
+
+\chapter{Los seres vivos}
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=1\linewidth]{Tema1/00_ADN.jpg}
+    \caption{ADN}
+    \label{fig:adn}
+\end{figure}
+
+\include{Tema1S01_Que_es_un_ser_vivo}
+\include{Tema1S02_Niveles_de_organizacion}
+\include{Tema1S03_Los_cinco_reinos}
+\include{Tema1S04_Los_ecosistemas}
+
+\chapter{Relieve e hidrografía de España y de Europa}
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=1\linewidth]{Tema2/01_mapa_europa_fisico.jpg}
+    \caption{Mapa físico de Europa}
+    \label{fig:mapa-fisico-europa}
+\end{figure}
+
+\include{Tema2S01_Situacion_y_relieve_de_España}
+\include{Tema2S02_Situacion_y_relieve_de_Europa}
+\include{Tema2S03_Hidrosfera}
+\include{Tema2S04_Aguas_continentales}
+\include{Tema2S05_Hidrografia_España}
+\include{Tema2S06_Hidrografia_Andalucia}
+\include{Tema2S07_Hidrografia_de_Europa}
+\include{Tema2S08_Consumo_responsable}
+
+
+\addcontentsline{toc}{chapter}{TRIMESTRE 2}
+\part*{Trimestre 2}
+
+\chapter{Las funciones vitales}
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=1\linewidth]{Tema3/00_Vida.png}
+    \caption{Las funciones vitales}
+    \label{fig:funciones-vitales}
+\end{figure}
+
+\include{Tema3S01_Nutricion}
+\include{Tema3S02_Relacion}
+\include{Tema3S03_Reproduccion}
+
+
+\chapter{Economía, sociedad y cultura en España y Europa}
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=1\linewidth]{Tema4/00_Economia.jpg}
+    \caption{Economía, sociedad y cultura en España y Europa}
+    \label{fig:economia}
+\end{figure}
+
+\include{Tema4S01_Actividad_economica}
+
+
+\addcontentsline{toc}{chapter}{TRIMESTRE 3}
+
+\part*{Trimestre 3}
+
+\include{Tema5_Materia_energia}
+
+\include{Tema6_España}
+
+\end{document}
