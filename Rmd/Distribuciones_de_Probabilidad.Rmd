@@ -183,3 +183,18 @@ Al igual que en las distribuciones anteriores, se pueden calcular las probabilid
 \vspace{12pt}
 ### DISTRIBUCIÓN UNIFORME
 
+El dominio de esta distribución está definido por los valores máximo y mínimo $a$ y $b$. Su función de densidad viene dada por:
+
+\[ f(x) = \left\{\begin{array}{ccc} \frac{1}{b - a} & \text{para} & a \leq x \leq b \\ 0 & \text{para} & x < a \text{\; ó \;} x > b \end{array} \right. \]
+
+**EJEMPLO**
+
+Una mujer está dando a luz a un bebé, y la hora exacta del alumbramiento $(X)$ sucederá en cualquier momento entre la hora $0$ (ahora) y la hora $24$ (la misma hora del día siguiente).
+
+a) Para calcular la probabilidad de que la madre de a luz dentro de las primeras cinco horas $(P(X < 5))$ escribiremos:
+
+    ```{r}
+    punif(5, min = 0, max = 24, lower.tail = TRUE)
+    ```
+
+En distribuciones continuas, $P(X < x)$ equivale a $P(X \leq x)$. En una distribución continua el cálculo de una probabilidad del tipo $P(X = x)$ será siempre nula, es decir, $P(X = x) = 0$.
