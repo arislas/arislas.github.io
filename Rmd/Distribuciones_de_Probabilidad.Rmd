@@ -8,6 +8,11 @@ output:
     toc_depth: 3
   html_document:
     df_print: paged
+header-includes:
+  - \usepackage{titletoc}
+  - \usepackage{xlop}
+  - \titlecontents{section}[0em]{\bfseries}{}{}{\titlerule*[1pc]{.}\contentspage}
+  - \renewcommand{\contentsname}{Índice}
 ---
 
 ```{r setup, include=FALSE}
@@ -152,4 +157,29 @@ a) Si queremos saber la probabilidad de que sepa como mínimo dos temas $(P(X \g
 Como las anteriores, también se deriva de la distribución binomial.
 
 **EJEMPLO**
+
+Tomamos una variable $X$, definida como el tiempo de espera del autobús en minutos, y que tiene como único parámetro $\lambda$, que representa tanto la media, como la varianza de la variable aleatoria.
+
+Supongamos que el tiempo de espera es de $3$ minutos, o sea, $\lambda = 3$.
+
+a) Para saber la probabilidad de que el autobús tarde $5$ minutos:
+
+    \[ P(X = 5) = \frac{\lambda^k}{k!}e^{-\lambda} = \frac{3^5}{5!}e^{-3} = 0.1008 \]
+
+b) Si queremos saber la probabilidad de los once primeros valores (desde $P(X = 0)$ hasta $P(X = 10)$):
+
+    ```{r}
+    RPoiss <- data.frame(Pr = dpois(0:10, lambda = 3))
+    rownames(RPoiss) <- 0:10
+    RPoiss
+    ```
+
+Al igual que en las distribuciones anteriores, se pueden calcular las probabilidades acumuladas, gráficos y simulaciones muestrales.
+
+\newpage
+
+## DISTRIBUCIONES CONTINUAS
+
+\vspace{12pt}
+### DISTRIBUCIÓN UNIFORME
 
