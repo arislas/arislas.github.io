@@ -1,9 +1,11 @@
 ---
 title: "DISTRIBUCIONES DE PROBABILIDAD"
-author: "xto sarcior"
+author: 
 date: '`r Sys.Date()`'
 output:
-  pdf_document: default
+  pdf_document:
+    toc: true
+    toc_depth: 3
   html_document:
     df_print: paged
 ---
@@ -11,6 +13,8 @@ output:
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+
+\newpage
 
 ## DISTRIBUCIONES DISCRETAS
 
@@ -99,7 +103,7 @@ En este caso, $x$ es el número de intento en el que el jugador tendrá éxito (
 
 Definimos una variable aleatoria $X$, que será el número del intento en el que el jugador encesta el primer triple, es decir, el número de ensayos necesarios hasta encestar.
 
-a) Si queremos saber la probabilidad de que enceste el primer triple dentro de los $6$ primeros intentos con una probablidad de encestar de $p = 0.3$ $(P(X \leq 6) = F(6))$:
+a) Si queremos saber la probabilidad de que el primer triple que enceste sea en el sexto intento con una probablidad de encestar de $p = 0.3$ $(P(X \leq 6) = F(6))$:
 
     ```{r}
     pgeom(5, prob = 0.3, lower.tail = TRUE)
@@ -116,3 +120,36 @@ b) Para hacer la representación gráfica tomando $20$ como el número máximo d
          xlab = "Número de errores hasta acertar", 
          ylab = "Masa de probabilidad", type = "h")
     ```
+
+### DISTRIBUCIÓN HIPERGEOMÉTRICA
+
+Se da cuando las observaciones no son independientes. Supongamos que tenemos una muestra de $N$ bolas, de las cuales $N_1$ son verdes y $N_2$ son rojas, de modo que $N_1 + N_2 = N$. Si extraemos $n$ bolas (sin retorno), la variable $X$ será el número de bolas verdes obtenidas.
+
+\[ P(X = x) = \frac{\binom{N_1}{x} \binom{N_2}{n - x}}{\binom{N}{n}} \]
+
+**EJEMPLO**
+
+Un estudiante de oposiciones ha preparado doce de los dieciocho temas de los que consta el examen. La prueba consiste en tres temas elegidos de manera aleatoria. ¿Qué probabilidad tiene el estudiante de conocer los tres temas? Sabemos que $N_1 = 12$, $N_2 = 6$ y $N = 18$. Además, la extracción es $n = 3$.
+
+```{r}
+RHiper <- data.frame(Pr = dhyper(0:3, m = 12, n = 6, k = 3))
+rownames(RHiper) <- 0:3
+RHiper
+```
+
+La probabilidad de que los tres temas que ha estudiado entren en el examen es del $26.9 \; \%$. La probabilidad más alta es $P(X = 2) = 0.485$, es decir, que haya estudiado dos de los tres temas que saldrán.
+
+a) Si queremos saber la probabilidad de que sepa como mínimo dos temas $(P(X \geq 2))$, necesitamos la probabilidad acumulada de la cola derecha. $R$ calcula $P(X > x)$, así que tendremos que calcular la función de distribución con $x = 1$ porque $P(X > 1) = P(X \geq 2)$:
+
+    ```{r}
+    phyper(1, m = 12, n = 6, k = 3, lower.tail = FALSE)
+    ```
+
+    Esto significa que tiene una probabilidad del $75 \; \%$ de que conozca dos o tres temas en el examen.
+
+### DISTRIBUCIÓN DE POISON
+
+Como las anteriores, también se deriva de la distribución binomial.
+
+**EJEMPLO**
+
