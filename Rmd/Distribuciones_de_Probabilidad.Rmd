@@ -1,0 +1,105 @@
+---
+title: "DISTRIBUCIONES DE PROBABILIDAD"
+author: "xto sarcior"
+date: "`r Sys.Date()`"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## DISTRIBUCIONES DISCRETAS
+
+\vspace{12pt}
+### DISTRIBUCIÓN BINOMIAL
+
+Mide el número de éxitos en una secuencia de $n$ ensayos de Bernoulli independientes entre sí con una probabilidad $p$ de éxito entre los ensayos.
+
+\[ P(X = x) = \binom{n}{x} p^x (1 - p)^{n - x} \]
+
+Es la probabilidad de tener $x$ éxitos en $n$ ensayos.
+
+**EJEMPLO**
+
+La probabilidad de que un jugador de baloncesto enceste un triple es del 30 %, es decir, $p = 0.3$. Suponemos que lanza $5$ veces, $n = 5$.
+
+a) Si quieremos calcular la probabilidad de que enceste tres tiros $(P(X = 3))$:
+
+    ```{r}
+    dbinom(3, size = 5, prob = 0.3)
+    ```
+
+b) Si queremos calcular todas las probabilidades de golpe en forma de tabla:
+
+    ```{r}
+    RBinom <- data.frame(Pr = dbinom(0:5, size = 5, prob = 0.3))
+    rownames(RBinom) <- 0:5
+    RBinom
+    ```
+
+c) La probabilidad de encestar más de $3$ triples $(P(X \geq 3))$:
+
+    ```{r}
+    pbinom(3, size = 5, prob = 0.3, lower.tail = FALSE)
+    ```
+
+d) Si queremos saber todas las probabilidades acumuladas (más de $0$, más de $1$, ...), calculamos la cola derecha $(P(X > x))$:
+
+    ```{r}
+    pbinom(0:5, size = 5, prob = 0.3, lower.tail = FALSE)
+    ```
+
+e) Si queremos calcular las colas izquierdas $(P(X \leq x))$, esto es, la probabilidad de encestar menos de $1$, menos de $2$, ...:
+
+    ```{r}
+    pbinom(0:5, size = 5, prob = 0.3, lower.tail = TRUE)
+    ```
+
+f) La probabilidad de encestar menos de dos tiros $(P(X \leq 1))$:
+
+    ```{r}
+    pbinom(1, size = 5, prob = 0.3, lower.tail = TRUE)
+    ```
+
+g) Para representar gráficamente la función de probabilidad:
+
+    ```{r}
+    x <- 0:5
+    Binom_plot <- dbinom(x, size = 5, prob = 0.3)
+    plot(x, Binom_plot, main = "Distribución binomial (n = 5, p = 0.3)",
+         xlab = "Número de sucesos", ylab = "Masa de probabilidad",
+         type = "h")
+    ```
+
+h) Para representar gráficamente la función de probabilidad acumulada:
+
+    ```{r}
+    x <- 0:5
+    Acum <- pbinom(x, size = 5, prob = 0.3)
+    plot(x, Acum, main = "Distribución binomial (n = 5, p = 0.3)",
+         xlab = "Número de sucesos", ylab = "Probabilidad acumulada",
+         type = "s")
+    ```
+
+### DISTRIBUCIÓN GEOMÉTRICA
+
+Describe la probabilidad del número de ensayos de Bernoulli necesarios para obtener un éxito.
+
+\[P(X = x) = (1 - p)^{x - 1} p \]
+
+\[P(X \leq x) = F(x) = 1 - (1 - p)^x \]
+
+En este caso, $x$ es el número de intento en el que el jugador tendrá éxito (encestará el triple) y $p$ es la probabilidad de encestar.
+
+**EJEMPLO**
+
+Definimos una variable aleatoria $X$, que será el número del intento en el que el jugador encesta el primer triple, es decir, el número de ensayos necesarios hasta encestar.
+
+a) Si queremos saber la probabilidad de que enceste el primer triple dentro de los $6$ primeros intentos con una probablidad de encestar de $p = 0.3$ $(P(X \leq 6) = F(6))$:
+
+    ```{r}
+    pgeom(5, prob = 0.3, lower.tail = TRUE)
+    ```
+
+Donde el primer número $(5)$ es el **número de fallos** antes del primer acierto, esto es $x - 1$. Estamos calculando la **cola izquierda** $(P(X \leq x))$.
