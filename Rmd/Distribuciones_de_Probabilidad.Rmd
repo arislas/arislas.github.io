@@ -1,8 +1,11 @@
 ---
 title: "DISTRIBUCIONES DE PROBABILIDAD"
 author: "xto sarcior"
-date: "`r Sys.Date()`"
-output: pdf_document
+date: '`r Sys.Date()`'
+output:
+  pdf_document: default
+  html_document:
+    df_print: paged
 ---
 
 ```{r setup, include=FALSE}
@@ -102,4 +105,14 @@ a) Si queremos saber la probabilidad de que enceste el primer triple dentro de l
     pgeom(5, prob = 0.3, lower.tail = TRUE)
     ```
 
-Donde el primer número $(5)$ es el **número de fallos** antes del primer acierto, esto es $x - 1$. Estamos calculando la **cola izquierda** $(P(X \leq x))$.
+    Donde el primer número $(5)$ es el **número de fallos** antes del primer acierto, esto es $x - 1$. Estamos calculando la **cola izquierda** $(P(X \leq x))$.
+
+b) Para hacer la representación gráfica tomando $20$ como el número máximo de intentos antes de acertar, definimos primero el vector $x$ que contiene el número de intentos, y el vector $y$, que contiene la probabilidad de acertar el primer triple en el i-ésimo tiro:
+
+    ```{r}
+    x <- 0:20
+    y <- dgeom(x, prob = 0.3)
+    plot(x, y, main = "Distribución geométrica (p = 0.3)",
+         xlab = "Número de errores hasta acertar", 
+         ylab = "Masa de probabilidad", type = "h")
+    ```
