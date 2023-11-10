@@ -1,5 +1,5 @@
 ---
-title: "DISTRIBUCIONES DE PROBABILIDAD"
+title: "**DISTRIBUCIONES DE PROBABILIDAD**"
 author: 
 date: '`r Sys.Date()`'
 output:
@@ -12,7 +12,7 @@ header-includes:
   - \usepackage{titletoc}
   - \usepackage{xlop}
   - \titlecontents{section}[0em]{\bfseries}{}{}{\titlerule*[1pc]{.}\contentspage}
-  - \renewcommand{\contentsname}{Índice}
+  - \renewcommand{\contentsname}{ÍNDICE}
 ---
 
 ```{r setup, include=FALSE}
@@ -21,10 +21,10 @@ knitr::opts_chunk$set(echo = TRUE)
 
 \newpage
 
-## DISTRIBUCIONES DISCRETAS
+## **DISTRIBUCIONES DISCRETAS**
 
 \vspace{12pt}
-### DISTRIBUCIÓN BINOMIAL
+### **DISTRIBUCIÓN BINOMIAL**
 
 Mide el número de éxitos en una secuencia de $n$ ensayos de Bernoulli independientes entre sí con una probabilidad $p$ de éxito entre los ensayos.
 
@@ -94,7 +94,7 @@ h) Para representar gráficamente la función de probabilidad acumulada:
          type = "s")
     ```
 
-### DISTRIBUCIÓN GEOMÉTRICA
+### **DISTRIBUCIÓN GEOMÉTRICA**
 
 Describe la probabilidad del número de ensayos de Bernoulli necesarios para obtener un éxito.
 
@@ -126,7 +126,7 @@ b) Para hacer la representación gráfica tomando $20$ como el número máximo d
          ylab = "Masa de probabilidad", type = "h")
     ```
 
-### DISTRIBUCIÓN HIPERGEOMÉTRICA
+### **DISTRIBUCIÓN HIPERGEOMÉTRICA**
 
 Se da cuando las observaciones no son independientes. Supongamos que tenemos una muestra de $N$ bolas, de las cuales $N_1$ son verdes y $N_2$ son rojas, de modo que $N_1 + N_2 = N$. Si extraemos $n$ bolas (sin retorno), la variable $X$ será el número de bolas verdes obtenidas.
 
@@ -152,7 +152,7 @@ a) Si queremos saber la probabilidad de que sepa como mínimo dos temas $(P(X \g
 
     Esto significa que tiene una probabilidad del $75 \; \%$ de que conozca dos o tres temas en el examen.
 
-### DISTRIBUCIÓN DE POISON
+### **DISTRIBUCIÓN DE POISON**
 
 Como las anteriores, también se deriva de la distribución binomial.
 
@@ -178,10 +178,10 @@ Al igual que en las distribuciones anteriores, se pueden calcular las probabilid
 
 \newpage
 
-## DISTRIBUCIONES CONTINUAS
+## **DISTRIBUCIONES CONTINUAS**
 
 \vspace{12pt}
-### DISTRIBUCIÓN UNIFORME
+### **DISTRIBUCIÓN UNIFORME**
 
 El dominio de esta distribución está definido por los valores máximo y mínimo $a$ y $b$. Su función de densidad viene dada por:
 
@@ -198,3 +198,13 @@ a) Para calcular la probabilidad de que la madre de a luz dentro de las primeras
     ```
 
 En distribuciones continuas, $P(X < x)$ equivale a $P(X \leq x)$. En una distribución continua el cálculo de una probabilidad del tipo $P(X = x)$ será siempre nula, es decir, $P(X = x) = 0$.
+
+b) Si queremos calcular la probabilidad de que la madre para en las últimas dos horas (a partir de la hora $22$), estaremos calculando $(P(X > 22))$:
+
+    ```{r}
+    punif(22, min = 0, max = 24, lower.tail = FALSE)
+    ```
+
+### **DISTRIBUCIÓN EXPONENCIAL**
+
+Esta distribución está relacionada con la distribución de Poisson.
