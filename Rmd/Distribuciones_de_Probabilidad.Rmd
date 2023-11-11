@@ -314,3 +314,26 @@ c) Supongamos que el jefe de pediatría quiere separar a los bebés en tres grup
 
 ### **DISTRIBUCIÓN DE LA MEDIA MUESTRAL**
 
+Es un caso relevante en el estudio de la distribución normal.
+
+**EJEMPLO**
+
+Los doctores del ejemplo anterior quieren hacer estadísticas de control del peso de los bebés que nacen. Interpretando los $n$ bebés que nacen cada día como una muestra aleatoria independiente, se analiza para cada una de estas muestras la media muestral. Ya que cada día (es decir, cada muestra) se obtendrá una media muestral distinta, esta se puede analizar como una variable aleatoria denominada $\overline{X}$, que tiene su propia distribución. A la hora de analizar y calcular probabilidades sobre $\overline{X}$, es imprescindible distinguir si conocemos o no la dispersión de la población $(\sigma)$ de la que se obtiene $\overline{X}$.
+
+Si esta dispersión es conocida, $\overline{X}$ se distribuye como una normal, tal que:
+
+\[ \overline{X} \sim N \left( \mu, \frac{\sigma}{\sqrt{n}} \right) \]
+
+Si $n$ es el tamaño de la muestra, suponemos que disponemos de una muestra de $150$ bebés $(n = 150)$ y queremos calcular $P(\overline{X} \geq 3.75)$, sabiendo que $\mu = 3.5$ y que $\sigma = 0.25$.
+
+Primero, calculamos cuál es la desviación típica de la variable media muestral $\overline{X}$:
+
+\[ \frac{\sigma}{\sqrt{n}} = \frac{0.25}{\sqrt{150}} = 0.02 \]
+
+Si sabemos que $\overline{X} \sim N(3.5, 0.02)$, calculamos esta probabilidad en *R* de la siguiente manera:
+
+```{r}
+pnorm(3.75, mean = 3.5, sd = 0.02, lower.tail = FALSE)
+```
+
+El resultado es prácticamente cero. Este resultado indica que la probabilidad de que, en un día, la media muestral de los $n = 150$ bebés nacidos sea de $3.75$ kilos $(P(\overline{X} \geq 3.75))$ es prácticamente nula.
