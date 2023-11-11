@@ -301,3 +301,13 @@ b) Calculamos la probabilidad $P(3 \leq X \leq 4))$
     ```
     
     De esta forma, obtenemos que $P(3 \leq X \leq 4) = 1 - 2 \cdot 0.023 = 0.954$, es decir, más del $95 \; \%$ de los bebés nacerán dentro del intervalo de pesos $[3, 4]$.
+
+c) Supongamos que el jefe de pediatría quiere separar a los bebés en tres grupos: a) muy poco peso, b) poco peso y c) peso normal. El doctor decide que habrá un $10 \; \%$ de los bebés en el primer grupo, un $20 \; \%$ en el segundo y el resto (un $70 \; \%$) en el tercero. ¿Cuáles serán los puntos de corte entre los tres grupos?
+
+    Para contestar a esta pregunta tenemos que calcular los percentiles $0.1$ y $0.2$, que dividen el área total en las tres partes que nos interesan (es decir, $10 \; \%$, $20 \; \%$ y $70 \; \%$, en este orden):
+    
+    ```{r}
+    qnorm(c(0.1, 0.2), mean = 3.5, sd = 0.25, lower.tail = TRUE)
+    ```
+    
+    Estos percentiles indican que los bebés con muy poco peso serán los que pesan menos de $3.18$ kilos; los bebés con poco peso serán los que pesen entre $3.18$ y $3.29$ kilos y los bebés con peso normal serán los que pesen más de $3.29$ kilos.
