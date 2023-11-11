@@ -216,3 +216,13 @@ Sus funciones de densidad y de distribución son:
 \[ f(x) = \lambda e^{-\lambda x} \]
 
 \[ F(x) = P(X \leq x) = 1 - e^{-\lambda x} \]
+
+**EJEMPLO**
+
+En un hospital, el tiempo que transcurre entre dos partos (medido en horas) sigue una distribución exponencial con un parámetro $\lambda = 4$. Esto significa que la esperanza viene definida como $E(X) = \frac{1}{\lambda} = \frac{1}{4} = 0.25$, de media transcurre un cuarto de hora $(\frac{1}{4} = 0.25)$ entre un parto y otro.
+
+a) La probabiliad de que transcurra una hora o más entre dos partos $(P(X > 1))$:
+
+    ```{r}
+    pexp(1, rate = 4, lower.tail = FALSE)
+    ```
