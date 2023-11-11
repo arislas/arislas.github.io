@@ -208,3 +208,5 @@ b) Si queremos calcular la probabilidad de que la madre para en las últimas dos
 ### **DISTRIBUCIÓN EXPONENCIAL**
 
 Esta distribución está relacionada con la distribución de Poisson.
+
+Con esta distribución se modeliza el intervalo de tiempo
