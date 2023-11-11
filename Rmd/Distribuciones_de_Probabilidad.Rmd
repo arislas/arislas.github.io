@@ -226,3 +226,34 @@ a) La probabiliad de que transcurra una hora o más entre dos partos $(P(X > 1))
     ```{r}
     pexp(1, rate = 4, lower.tail = FALSE)
     ```
+
+    Hay aproximadamente un $1.8 \; \%$ de probabilidad de que transcurra una hora o más entre dos partos.
+
+b) La probabilidad de que transcurra como máximo una hora entre dos partos $(P(X \leq 1) = 1 - P(X > 1))$:
+
+    ```{r}
+    pexp(1, rate = 4, lower.tail = TRUE)
+    ```
+
+    Como vemos, se cumple:
+    
+    \[ P(X \leq x) + P(X > x) = 1 \]
+
+c) Para obtener la gráfica de la función de densidad, definimos un vector $x$ de $1000$ valores, equiespaciados entre $0$ y $2$ y luego calculamos la función de densidad correspondiente a cada valor, que guardamos en otro vector:
+    
+    ```{r}
+    x <- seq(0, 2, length.out = 1000)
+    y <- dexp(x, rate = 4)
+    plot(x, y, main = "Distribución exponencial de parámetro 4",
+         xlab = "x", ylab = "Densidad", type = "l")
+    ```
+
+d) Para la función de distribución tendremos que guardar en el vector los valores de la función de distribución correspondientes a cada uno de los valores de $x$:
+
+    ```{r}
+    x <- seq(0, 2, length.out = 1000)
+    y <- pexp(x, rate = 4, lower.tail = TRUE)
+    plot(x, y, main = "Distribución exponencial de parámetro 4",
+         xlab = "x", ylab = "Probabilidad acumulada", type = "l")
+    ```
+
