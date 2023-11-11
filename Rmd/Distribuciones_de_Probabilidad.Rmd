@@ -209,4 +209,10 @@ b) Si queremos calcular la probabilidad de que la madre para en las últimas dos
 
 Esta distribución está relacionada con la distribución de Poisson.
 
-Con esta distribución se modeliza el intervalo de tiempo
+Con esta distribución se modeliza el intervalo de tiempo que transcurre entre dos sucesos. Tiene un único parámetro $\lambda$ y está definida para valores no negativos de la variable aleatoria.
+
+Sus funciones de densidad y de distribución son:
+
+\[ f(x) = \lambda e^{-\lambda x} \]
+
+\[ F(x) = P(X \leq x) = 1 - e^{-\lambda x} \]
