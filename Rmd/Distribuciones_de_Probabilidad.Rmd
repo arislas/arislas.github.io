@@ -257,7 +257,7 @@ d) Para la función de distribución tendremos que guardar en el vector los valo
          xlab = "x", ylab = "Probabilidad acumulada", type = "l")
     ```
 
-## **DISTRIBUCIÓN NORMAL**
+### **DISTRIBUCIÓN NORMAL**
 
 La distribución normal o gaussiana tiene dos parámetros: la media $\mu$ y la desviación típica o estándar $\sigma$. Su función de densidad viene dada por la siguiente expresión:
 
@@ -311,3 +311,6 @@ c) Supongamos que el jefe de pediatría quiere separar a los bebés en tres grup
     ```
     
     Estos percentiles indican que los bebés con muy poco peso serán los que pesan menos de $3.18$ kilos; los bebés con poco peso serán los que pesen entre $3.18$ y $3.29$ kilos y los bebés con peso normal serán los que pesen más de $3.29$ kilos.
+
+### **DISTRIBUCIÓN DE LA MEDIA MUESTRAL**
+
