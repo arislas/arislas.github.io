@@ -257,3 +257,47 @@ d) Para la función de distribución tendremos que guardar en el vector los valo
          xlab = "x", ylab = "Probabilidad acumulada", type = "l")
     ```
 
+## **DISTRIBUCIÓN NORMAL**
+
+La distribución normal o gaussiana tiene dos parámetros: la media $\mu$ y la desviación típica o estándar $\sigma$. Su función de densidad viene dada por la siguiente expresión:
+
+\[ f(x) = \frac{1}{\sigma \sqrt{2 \pi}} e^{-\frac{1}{2} \left( \frac{x - \mu}{\sigma} \right)^2} \]
+
+**EJEMPLO**
+
+En un hospital, el peso de los bebés al nacer sigue una distribución normal con media $\mu = 3.5$ y desviación típica $\sigma = 0.25$.
+
+a) Queremos visualizar la forma de la función de densidad. Para eso, tenemos que definir un vector $x$ de forma que su mediana sea $3.5$. En este caso, podríamos tomar $1000$ número equidistantes entre $2.5$ y $4.5$ (para asegurarnos de que el $3.5$ queda en la mitad del vector). Luego, calculamos el vector $y$, donde cada componenete será la función de densidad de la coordenada de $x$ correspondiente.
+
+    ```{r}
+    x <- seq(2.5, 4.5, length.out = 1000)
+    y <- dnorm(x, mean = 3.5, sd = 0.25)
+    plot(x, y, main = "Distribución normal de media 3.5 y desviación típica 0.25",
+         xlab = "x", ylab = "Densidad", type = "l")
+    ```
+
+    Vemos cómo la mayor parte de los niños pesan entre $3$ y $4$ kilos al nacer.
+
+b) Calculamos la probabilidad $P(3 \leq X \leq 4))$
+
+    Al ser una distribución simétrica, vemos que si trazamos una línea vertical en la media aritmética $(3.5)$, en las dos partes de la distribución queda el $50 \; \%$ de la masa probabilística. Esto también se puede ver si nos fijamos en que $\mu = 3.5$ se sitúa en medio de los valores $3$ y $4$; entonces, el área que quedará a la izquierda de $3$ y el área que quedará a la derecha de $4$ serán iguales debido a la simetría de la distribución. Por tanto, si queremos calcular el área que queda entre $3$ y $4$, es decir $P(3 \leq X \leq 4)$, una opción es calcular uno menos las dos colas de los extremos, $P(X \leq 3)$ y $P(X \geq 4)$:
+    
+    \[ P(3 \leq X \leq 4) = 1 - P(X \leq 3) - P(X \geq 4) \]
+    
+    Como sabemos que estos dos extremos han de tener el mismo área o valor, es decir, $P(X \leq 3) = P(X \geq 4)$, la fórmula anterior se puede simplificar de la manera siguiente:
+    
+    \[ P(3 \leq X \leq 4) = 1 - 2P(X \leq 3) \]
+    
+    Otras formas alternativas de obtener esta probabilidad son:
+    
+    \[ P(3 \leq X \leq 4) = 1 - 2P(x \geq 4) \]
+    
+    \[ P(3 \leq X \leq 4) = P(X \leq 4) - P(X \leq 3) \]
+    
+    Calculamos la probabilidad $P(X \leq 3)$ con *R* siguiendo la primera opción:
+    
+    ```{r}
+    pnorm(3, mean = 3.5, sd = 0.25, lower.tail = TRUE)
+    ```
+    
+    De esta forma, obtenemos que $P(3 \leq X \leq 4) = 1 - 2 \cdot 0.023 = 0.954$, es decir, más del $95 \; \%$ de los bebés nacerán dentro del intervalo de pesos $[3, 4]$.
