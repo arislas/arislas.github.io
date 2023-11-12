@@ -11,7 +11,7 @@ body {
 }
 
 /* Estilos del contenedor de la terminal */
-.msx-terminal {
+.linux-terminal {
     background-color: #000;
     padding: 10px; /* Añade espacio alrededor del contenido */
     width: 100vw; /* Ocupa el 100% del ancho de la ventana */
@@ -20,7 +20,7 @@ body {
 }
 
 /* Estilos del área visible de la terminal */
-.msx-screen {
+.linux-screen {
     padding: 10px;
     background-color: #000;
     height: calc(100% - 20px); /* Calcula la altura restando el doble del padding */
@@ -28,9 +28,9 @@ body {
 }
 
 /* Estilos para los elementos de texto en la terminal */
-.msx-prompt,
-.msx-command,
-.msx-output {
+.linux-prompt,
+.linux-command,
+.linux-output {
     color: #0F0; /* Color del texto en verde */
 }
 
