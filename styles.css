@@ -55,3 +55,19 @@ a:hover {
 h2 {
     font-weight: normal; /* Hace que el texto h3 no esté en negrita */
 }
+
+/* Estilos para el cursor parpadeante */
+.cursor {
+    display: inline-block;
+    width: 0.6em; /* Ajusta el ancho según sea necesario */
+    animation: blink 1.5s infinite; /* Configura la animación de parpadeo */
+}
+
+@keyframes blink {
+    0%, 50%, 100% {
+        opacity: 0; /* El cursor estará invisible en estos momentos */
+    }
+    25%, 75% {
+        opacity: 1; /* El cursor estará visible en estos momentos */
+    }
+}
