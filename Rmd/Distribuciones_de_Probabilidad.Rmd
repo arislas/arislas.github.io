@@ -1,5 +1,5 @@
 ---
-title: "DISTRIBUCIONES DE PROBABILIDAD"
+title: "**DISTRIBUCIONES DE PROBABILIDAD**"
 author: 
 date: '`r Sys.Date()`'
 output:
@@ -12,7 +12,7 @@ header-includes:
   - \usepackage{titletoc}
   - \usepackage{xlop}
   - \titlecontents{section}[0em]{\bfseries}{}{}{\titlerule*[1pc]{.}\contentspage}
-  - \renewcommand{\contentsname}{Índice}
+  - \renewcommand{\contentsname}{ÍNDICE}
 ---
 
 ```{r setup, include=FALSE}
@@ -21,10 +21,10 @@ knitr::opts_chunk$set(echo = TRUE)
 
 \newpage
 
-## DISTRIBUCIONES DISCRETAS
+## **DISTRIBUCIONES DISCRETAS**
 
 \vspace{12pt}
-### DISTRIBUCIÓN BINOMIAL
+### **DISTRIBUCIÓN BINOMIAL**
 
 Mide el número de éxitos en una secuencia de $n$ ensayos de Bernoulli independientes entre sí con una probabilidad $p$ de éxito entre los ensayos.
 
@@ -94,7 +94,7 @@ h) Para representar gráficamente la función de probabilidad acumulada:
          type = "s")
     ```
 
-### DISTRIBUCIÓN GEOMÉTRICA
+### **DISTRIBUCIÓN GEOMÉTRICA**
 
 Describe la probabilidad del número de ensayos de Bernoulli necesarios para obtener un éxito.
 
@@ -126,7 +126,7 @@ b) Para hacer la representación gráfica tomando $20$ como el número máximo d
          ylab = "Masa de probabilidad", type = "h")
     ```
 
-### DISTRIBUCIÓN HIPERGEOMÉTRICA
+### **DISTRIBUCIÓN HIPERGEOMÉTRICA**
 
 Se da cuando las observaciones no son independientes. Supongamos que tenemos una muestra de $N$ bolas, de las cuales $N_1$ son verdes y $N_2$ son rojas, de modo que $N_1 + N_2 = N$. Si extraemos $n$ bolas (sin retorno), la variable $X$ será el número de bolas verdes obtenidas.
 
@@ -152,7 +152,7 @@ a) Si queremos saber la probabilidad de que sepa como mínimo dos temas $(P(X \g
 
     Esto significa que tiene una probabilidad del $75 \; \%$ de que conozca dos o tres temas en el examen.
 
-### DISTRIBUCIÓN DE POISON
+### **DISTRIBUCIÓN DE POISON**
 
 Como las anteriores, también se deriva de la distribución binomial.
 
@@ -178,10 +178,10 @@ Al igual que en las distribuciones anteriores, se pueden calcular las probabilid
 
 \newpage
 
-## DISTRIBUCIONES CONTINUAS
+## **DISTRIBUCIONES CONTINUAS**
 
 \vspace{12pt}
-### DISTRIBUCIÓN UNIFORME
+### **DISTRIBUCIÓN UNIFORME**
 
 El dominio de esta distribución está definido por los valores máximo y mínimo $a$ y $b$. Su función de densidad viene dada por:
 
@@ -198,3 +198,142 @@ a) Para calcular la probabilidad de que la madre de a luz dentro de las primeras
     ```
 
 En distribuciones continuas, $P(X < x)$ equivale a $P(X \leq x)$. En una distribución continua el cálculo de una probabilidad del tipo $P(X = x)$ será siempre nula, es decir, $P(X = x) = 0$.
+
+b) Si queremos calcular la probabilidad de que la madre para en las últimas dos horas (a partir de la hora $22$), estaremos calculando $(P(X > 22))$:
+
+    ```{r}
+    punif(22, min = 0, max = 24, lower.tail = FALSE)
+    ```
+
+### **DISTRIBUCIÓN EXPONENCIAL**
+
+Esta distribución está relacionada con la distribución de Poisson.
+
+Con esta distribución se modeliza el intervalo de tiempo que transcurre entre dos sucesos. Tiene un único parámetro $\lambda$ y está definida para valores no negativos de la variable aleatoria.
+
+Sus funciones de densidad y de distribución son:
+
+\[ f(x) = \lambda e^{-\lambda x} \]
+
+\[ F(x) = P(X \leq x) = 1 - e^{-\lambda x} \]
+
+**EJEMPLO**
+
+En un hospital, el tiempo que transcurre entre dos partos (medido en horas) sigue una distribución exponencial con un parámetro $\lambda = 4$. Esto significa que la esperanza viene definida como $E(X) = \frac{1}{\lambda} = \frac{1}{4} = 0.25$, de media transcurre un cuarto de hora $(\frac{1}{4} = 0.25)$ entre un parto y otro.
+
+a) La probabiliad de que transcurra una hora o más entre dos partos $(P(X > 1))$:
+
+    ```{r}
+    pexp(1, rate = 4, lower.tail = FALSE)
+    ```
+
+    Hay aproximadamente un $1.8 \; \%$ de probabilidad de que transcurra una hora o más entre dos partos.
+
+b) La probabilidad de que transcurra como máximo una hora entre dos partos $(P(X \leq 1) = 1 - P(X > 1))$:
+
+    ```{r}
+    pexp(1, rate = 4, lower.tail = TRUE)
+    ```
+
+    Como vemos, se cumple:
+    
+    \[ P(X \leq x) + P(X > x) = 1 \]
+
+c) Para obtener la gráfica de la función de densidad, definimos un vector $x$ de $1000$ valores, equiespaciados entre $0$ y $2$ y luego calculamos la función de densidad correspondiente a cada valor, que guardamos en otro vector:
+    
+    ```{r}
+    x <- seq(0, 2, length.out = 1000)
+    y <- dexp(x, rate = 4)
+    plot(x, y, main = "Distribución exponencial de parámetro 4",
+         xlab = "x", ylab = "Densidad", type = "l")
+    ```
+
+d) Para la función de distribución tendremos que guardar en el vector los valores de la función de distribución correspondientes a cada uno de los valores de $x$:
+
+    ```{r}
+    x <- seq(0, 2, length.out = 1000)
+    y <- pexp(x, rate = 4, lower.tail = TRUE)
+    plot(x, y, main = "Distribución exponencial de parámetro 4",
+         xlab = "x", ylab = "Probabilidad acumulada", type = "l")
+    ```
+
+### **DISTRIBUCIÓN NORMAL**
+
+La distribución normal o gaussiana tiene dos parámetros: la media $\mu$ y la desviación típica o estándar $\sigma$. Su función de densidad viene dada por la siguiente expresión:
+
+\[ f(x) = \frac{1}{\sigma \sqrt{2 \pi}} e^{-\frac{1}{2} \left( \frac{x - \mu}{\sigma} \right)^2} \]
+
+**EJEMPLO**
+
+En un hospital, el peso de los bebés al nacer sigue una distribución normal con media $\mu = 3.5$ y desviación típica $\sigma = 0.25$.
+
+a) Queremos visualizar la forma de la función de densidad. Para eso, tenemos que definir un vector $x$ de forma que su mediana sea $3.5$. En este caso, podríamos tomar $1000$ número equidistantes entre $2.5$ y $4.5$ (para asegurarnos de que el $3.5$ queda en la mitad del vector). Luego, calculamos el vector $y$, donde cada componenete será la función de densidad de la coordenada de $x$ correspondiente.
+
+    ```{r}
+    x <- seq(2.5, 4.5, length.out = 1000)
+    y <- dnorm(x, mean = 3.5, sd = 0.25)
+    plot(x, y, main = "Distribución normal de media 3.5 y desviación típica 0.25",
+         xlab = "x", ylab = "Densidad", type = "l")
+    ```
+
+    Vemos cómo la mayor parte de los niños pesan entre $3$ y $4$ kilos al nacer.
+
+b) Calculamos la probabilidad $P(3 \leq X \leq 4))$
+
+    Al ser una distribución simétrica, vemos que si trazamos una línea vertical en la media aritmética $(3.5)$, en las dos partes de la distribución queda el $50 \; \%$ de la masa probabilística. Esto también se puede ver si nos fijamos en que $\mu = 3.5$ se sitúa en medio de los valores $3$ y $4$; entonces, el área que quedará a la izquierda de $3$ y el área que quedará a la derecha de $4$ serán iguales debido a la simetría de la distribución. Por tanto, si queremos calcular el área que queda entre $3$ y $4$, es decir $P(3 \leq X \leq 4)$, una opción es calcular uno menos las dos colas de los extremos, $P(X \leq 3)$ y $P(X \geq 4)$:
+    
+    \[ P(3 \leq X \leq 4) = 1 - P(X \leq 3) - P(X \geq 4) \]
+    
+    Como sabemos que estos dos extremos han de tener el mismo área o valor, es decir, $P(X \leq 3) = P(X \geq 4)$, la fórmula anterior se puede simplificar de la manera siguiente:
+    
+    \[ P(3 \leq X \leq 4) = 1 - 2P(X \leq 3) \]
+    
+    Otras formas alternativas de obtener esta probabilidad son:
+    
+    \[ P(3 \leq X \leq 4) = 1 - 2P(x \geq 4) \]
+    
+    \[ P(3 \leq X \leq 4) = P(X \leq 4) - P(X \leq 3) \]
+    
+    Calculamos la probabilidad $P(X \leq 3)$ con *R* siguiendo la primera opción:
+    
+    ```{r}
+    pnorm(3, mean = 3.5, sd = 0.25, lower.tail = TRUE)
+    ```
+    
+    De esta forma, obtenemos que $P(3 \leq X \leq 4) = 1 - 2 \cdot 0.023 = 0.954$, es decir, más del $95 \; \%$ de los bebés nacerán dentro del intervalo de pesos $[3, 4]$.
+
+c) Supongamos que el jefe de pediatría quiere separar a los bebés en tres grupos: a) muy poco peso, b) poco peso y c) peso normal. El doctor decide que habrá un $10 \; \%$ de los bebés en el primer grupo, un $20 \; \%$ en el segundo y el resto (un $70 \; \%$) en el tercero. ¿Cuáles serán los puntos de corte entre los tres grupos?
+
+    Para contestar a esta pregunta tenemos que calcular los percentiles $0.1$ y $0.2$, que dividen el área total en las tres partes que nos interesan (es decir, $10 \; \%$, $20 \; \%$ y $70 \; \%$, en este orden):
+    
+    ```{r}
+    qnorm(c(0.1, 0.2), mean = 3.5, sd = 0.25, lower.tail = TRUE)
+    ```
+    
+    Estos percentiles indican que los bebés con muy poco peso serán los que pesan menos de $3.18$ kilos; los bebés con poco peso serán los que pesen entre $3.18$ y $3.29$ kilos y los bebés con peso normal serán los que pesen más de $3.29$ kilos.
+
+### **DISTRIBUCIÓN DE LA MEDIA MUESTRAL**
+
+Es un caso relevante en el estudio de la distribución normal.
+
+**EJEMPLO**
+
+Los doctores del ejemplo anterior quieren hacer estadísticas de control del peso de los bebés que nacen. Interpretando los $n$ bebés que nacen cada día como una muestra aleatoria independiente, se analiza para cada una de estas muestras la media muestral. Ya que cada día (es decir, cada muestra) se obtendrá una media muestral distinta, esta se puede analizar como una variable aleatoria denominada $\overline{X}$, que tiene su propia distribución. A la hora de analizar y calcular probabilidades sobre $\overline{X}$, es imprescindible distinguir si conocemos o no la dispersión de la población $(\sigma)$ de la que se obtiene $\overline{X}$.
+
+Si esta dispersión es conocida, $\overline{X}$ se distribuye como una normal, tal que:
+
+\[ \overline{X} \sim N \left( \mu, \frac{\sigma}{\sqrt{n}} \right) \]
+
+Si $n$ es el tamaño de la muestra, suponemos que disponemos de una muestra de $150$ bebés $(n = 150)$ y queremos calcular $P(\overline{X} \geq 3.75)$, sabiendo que $\mu = 3.5$ y que $\sigma = 0.25$.
+
+Primero, calculamos cuál es la desviación típica de la variable media muestral $\overline{X}$:
+
+\[ \frac{\sigma}{\sqrt{n}} = \frac{0.25}{\sqrt{150}} = 0.02 \]
+
+Si sabemos que $\overline{X} \sim N(3.5, 0.02)$, calculamos esta probabilidad en *R* de la siguiente manera:
+
+```{r}
+pnorm(3.75, mean = 3.5, sd = 0.02, lower.tail = FALSE)
+```
+
+El resultado es prácticamente cero. Este resultado indica que la probabilidad de que, en un día, la media muestral de los $n = 150$ bebés nacidos sea de $3.75$ kilos $(P(\overline{X} \geq 3.75))$ es prácticamente nula.

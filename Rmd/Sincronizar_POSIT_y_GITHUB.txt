@@ -1,0 +1,18 @@
+1. Instalar el paquete:
+
+> install.packages("usethis")
+
+2. Ejecutar (Se puede omitir mientras dure el token actual):
+
+> usethis::create_github_token()
+
+3. Se genera el token y se copia.
+
+4. Se ejecuta el comando siguiente y se pega el token:
+
+> gitcreds::gitcreds_set()
+
+5. Se reinicia la sesión en POSIT.
+
+El vídeo está en:
+https://www.youtube.com/watch?v=BAN4ErGF5ro
