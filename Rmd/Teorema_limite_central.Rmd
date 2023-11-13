@@ -2,21 +2,24 @@
 title: "**Teorema del límite central**"
 output:
   pdf_document:
-    toc: true
-    toc_depth: 3
-header-includes:
-  - \usepackage{titletoc}
-  - \usepackage{xlop}
-  - \usepackage{framed}\definecolor{shadecolor}{RGB}{224,238,238}
-  - \titlecontents{section}[0em]{\bfseries}{}{}{\titlerule*[1pc]{.}\contentspage}
-  - \renewcommand{\contentsname}{ÍNDICE}
-  
+    latex_engine: pdflatex # usa pdflatex
+    number_sections: yes # numera las secciones
+    toc: true # escribe el índice
+    toc_depth: 3 # profundidad del indice 3
+header-includes: # incluye paquetes latex
+  - \usepackage{titletoc} # paquete para el indice
+  - \titlecontents{section}[0em]{\bfseries}{}{}{\titlerule*[1pc]{.}\contentspage} # cambia el nombre del indice
+  - \renewcommand{\contentsname}{ÍNDICE} # cambia el nombre del indice
+  - \usepackage{xlop} # operaciones aritmeticas
+  - \usepackage{framed}\definecolor{shadecolor}{RGB}{224,238,238} # paquete para sombrear texto
 date: "`r Sys.Date()`"
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+
+\newpage
 
 \section{La distribución de la media muestral}
 
@@ -36,6 +39,8 @@ Deberemos distinguir dos casos: cuando la deviación típica de la variable que 
 
 \subsubsection{Caso de desviación típica poblacional conocida}
 
+La desviación poblacional es la desviación real de la variable, que en este caso suponemos conocida. Cuando calculamos la desviación a partir de muestras, hablamos de *desviación muestral*.
+
 Supongamos que en un estudio anterior se había demostrado que las alturas de los estudiantes seguían una distribución normal de media $172 \; cm$ y desviación típica de $11 \; cm$.
 
 Intuitivamente vemos que la media de las observacioens de la muestra que tenemos debe ser un valor cercano a $172$. También parece razonable pensar que observaciones mayores que la meida poblacional, $172$, se compensarán con valores menores, y que cuanto mayor sea la muestra, más cercano será el valor de la media muestral a $172$.
@@ -49,3 +54,37 @@ Pensemos ahora que tenemos una muestra de cien estudiantes. Hacemos diez grupos 
   
   sigue una distribución normal estándar.
 \end{shaded}
+
+La demostración de este resultado es consecuencia de una importante propiedad de las variables aleatorias normales. La propiedad es la siguiente: si $X$ e $Y$ son variables aleatorias independientes con leyes
+
+\[ N(\mu_1, \sigma_1^2) \; \text{y} \; N(\mu_2, \sigma_2^2) \]
+
+respectivamente, entonces $X + Y$ tiene una ley:
+
+\[ N(\mu_1 + \mu_2, \sigma_1^2 + \sigma_2^2) \]
+
+En el ejemplo, la variable que recoge todas las posibles medias de cada grupo de diez estudiantes sigue una distribución normal de media $172 \; cm$ y desviación típica $\displaystyle \frac{11}{\sqrt{10}} = 3.48 \; cm$. Observamos que cuanto mayor es la muestra, menor resulta la desviación típica y, por tanto, hay menor dispersión.
+
+Este cociente que nos da la desviación típica de la media muestral se conoce como *error estándar*.
+
+\begin{shaded}
+  Si $\sigma$ es la desviación típica de la población y $n$ el tamaño de la muestra, se define el \textbf{error estándar de la media muestral} como:
+  
+  \[ \frac{\sigma}{\sqrt{n}} \]
+\end{shaded}
+
+**Ejemplo de error estándar de una media muestral**
+
+Consideremos las alturas de los estudiantes. Supongamos que sabemos que se trata de una variable aleatoria normal de media $172 \; cm$ y desviación típica $11 \; cm$ y que hemos tomado una muestra de trescientos estudiantes al azar. Entonces podemos contestar preguntas del tipo siguiente:
+
+a) ¿Cuál es la probabilidad de que la media sea menor que $170 \; cm$?
+
+    La distribución de la media muestral es normal de media $172 \; cm$ y desviación típica:
+    
+    \[ \frac{11}{\sqrt{300}} = 0.635 \]
+    
+    Tipificamos la variable para obtener una normal $(0,1). Debemos calcular:
+    
+    \[ P(\overline{X} < 170) = P \left( \frac{\overline{X} - 172}{0.635} < \frac{-2}{0.635} \right) = P(Z < -3.149) = 0.0008 \]
+    
+    ya que $Z$ es una variable aleatoria normal $(0,1)$.
