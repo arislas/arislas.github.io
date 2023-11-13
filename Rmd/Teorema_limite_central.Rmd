@@ -1,6 +1,16 @@
 ---
 title: "**Teorema del límite central**"
-output: pdf_document
+output:
+  pdf_document:
+    toc: true
+    toc_depth: 3
+header-includes:
+  - \usepackage{titletoc}
+  - \usepackage{xlop}
+  - \usepackage{framed}\definecolor{shadecolor}{RGB}{224,238,238}
+  - \titlecontents{section}[0em]{\bfseries}{}{}{\titlerule*[1pc]{.}\contentspage}
+  - \renewcommand{\contentsname}{ÍNDICE}
+  
 date: "`r Sys.Date()`"
 ---
 
@@ -23,3 +33,19 @@ Supongamos que tenemos una muestra $x_1, ..., x_n$ de una variable aleatoria nor
 Esta media depende de la muestra. Normalmente tendremos solo una muestra, pero podríamos tomar muchas diferentes, de manera que a cada una le correspondería una media diferente. Esto nos da pie a hablar de la distribución muestral de la media. Para indicar que se trata de una variable aleatoria, la denotaremos por $overline{X}$.
 
 Deberemos distinguir dos casos: cuando la deviación típica de la variable que medimos es conocida y cuando es desconocida.
+
+\subsubsection{Caso de desviación típica poblacional conocida}
+
+Supongamos que en un estudio anterior se había demostrado que las alturas de los estudiantes seguían una distribución normal de media $172 \; cm$ y desviación típica de $11 \; cm$.
+
+Intuitivamente vemos que la media de las observacioens de la muestra que tenemos debe ser un valor cercano a $172$. También parece razonable pensar que observaciones mayores que la meida poblacional, $172$, se compensarán con valores menores, y que cuanto mayor sea la muestra, más cercano será el valor de la media muestral a $172$.
+
+Pensemos ahora que tenemos una muestra de cien estudiantes. Hacemos diez grupos de diez estudiantes y hacemos la media aritmética para cada grupo. Obtenemos diez valores, correspondientes a las diez medias $\overline{x}_1, ..., \overline{x}_{10}$. Parece razonable pensar que la media de estos nuevos datos sería también $172$. Por otra parte, también parece razonable pensar que estos nuevos valores sean más cercanos a $172$ que los datos originales, ya que en cada una de las medias se nos habrán compensado valores grandes con valores pequeños.
+
+\begin{shaded}
+  Si la variable que estudiamos sigue una distribución normal con media $\mu$ y desviación típica $\sigma$ conocidas, entonces la media muestral es también normal con la misma media $\mu$ y desviación típica $\displaystyle \frac{\sigma}{\sqrt{n}}$, donde $n$ es el tamaño de la muestra. Por tanto, tipificamos la variable $\overline{X}$ y obtenemos que:
+  
+  \[ \frac{\overline{X} - \mu}{\frac{\sigma}{\sqrt{n}}} \]
+  
+  sigue una distribución normal estándar.
+\end{shaded}
