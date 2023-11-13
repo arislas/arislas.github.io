@@ -1,5 +1,5 @@
 ---
-title: "Teorema del límite central"
+title: "**Teorema del límite central**"
 output: pdf_document
 date: "`r Sys.Date()`"
 ---
@@ -8,5 +8,12 @@ date: "`r Sys.Date()`"
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## La distribución de la media muestral
+\section{La distribución de la media muestral}
 
+Supongamos que queremos estudiar la media de la altura de los estudiantes de una universidad. De entre ellos hemos seleccionado una muestra al azar, los hemos medido y hemos calculado la media de las alturas de los estudiantes de la muestra. Ahora queremos ver cómo se comporta esta media muestral.
+
+Veremos que si sabemos que la variable que se estudia es normal, entonces la media muestral también es normal, pero con desviación típica menor. También veremos que si la variable no es normal, pero la muestra es lo bastante grande, la media también será aproximadamente normal.
+
+\subsection{Distribución de la media muestral para variables normales}
+
+Supongamos que tenemos una muestra $x_1, ..., x_n$ de una variable aleatoria normal. La media se define como:
