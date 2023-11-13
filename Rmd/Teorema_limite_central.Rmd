@@ -17,3 +17,9 @@ Veremos que si sabemos que la variable que se estudia es normal, entonces la med
 \subsection{Distribución de la media muestral para variables normales}
 
 Supongamos que tenemos una muestra $x_1, ..., x_n$ de una variable aleatoria normal. La media se define como:
+
+\[ \overline{x} = \frac{1}{n} \sum_{i = 1}^n x_i \]
+
+Esta media depende de la muestra. Normalmente tendremos solo una muestra, pero podríamos tomar muchas diferentes, de manera que a cada una le correspondería una media diferente. Esto nos da pie a hablar de la distribución muestral de la media. Para indicar que se trata de una variable aleatoria, la denotaremos por $overline{X}$.
+
+Deberemos distinguir dos casos: cuando la deviación típica de la variable que medimos es conocida y cuando es desconocida.
