@@ -1,0 +1,12 @@
+---
+title: "Teorema del límite central"
+output: pdf_document
+date: "`r Sys.Date()`"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## La distribución de la media muestral
+
