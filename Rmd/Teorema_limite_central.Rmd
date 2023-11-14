@@ -124,7 +124,7 @@ c) Consideremos ahora el problema inverso. Supongamos que desconocemos la media 
 Si se multiplican el numerador y el denominador por $n$, podemos escribir el resultado que hemos visto en este apartado de otra manera.
 
 \begin{shaded}
-  Si la variable que estudiamos sigue una distribución normal con media $mu$ y desviación típica $\sigma$, entonces:
+  Si la variable que estudiamos sigue una distribución normal con media $\mu$ y desviación típica $\sigma$, entonces:
   
   \[ \frac{\displaystyle \sum_{i = 1}^n X_i - n \mu}{\sqrt{n} \sigma} \]
   
