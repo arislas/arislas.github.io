@@ -23,7 +23,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 \section{La distribución de la media muestral}
 
-Supongamos que queremos estudiar la media de la altura de los estudiantes de una universidad. De entre ellos hemos seleccionado una muestra al azar, los hemos medido y hemos calculado la media de las alturas de los estudiantes de la muestra. Ahora queremos ver cómo se comporta esta media muestral.
+Supongamos que queremos estudiar la media de la altura de unos estudiantes. De entre ellos hemos seleccionado una muestra al azar, los hemos medido y hemos calculado la media de las alturas de los estudiantes de la muestra. Ahora queremos ver cómo se comporta esta media muestral.
 
 Veremos que si sabemos que la variable que se estudia es normal, entonces la media muestral también es normal, pero con desviación típica menor. También veremos que si la variable no es normal, pero la muestra es lo bastante grande, la media también será aproximadamente normal.
 
@@ -94,3 +94,39 @@ b) ¿Cuál es la probabilidad de que la distancia entre la media muestral (de es
     Por un razonamiento parecido (si la distancia entre dos números $a$ y $b$ ha de ser menor que $k$, se debe cumplir $|a - b| < k$):
     
     \[ P(|\overline{X} - \mu| < 1) = P(-1 < \overline{X} - \mu < 1) = P \left( -\frac{1}{0.635} < \frac{\overline{X} - \mu}{0.635} < \frac{1}{0.635} \right) = P(-1.57 < Z < 1.57) \]
+    
+    donde $Z$ es una variable aleatoria normal $(0, 1)$. Si buscamos en las tablas de la ley normal $(0, 1)$, vemos que esta probabilidad es igual a $0.8836$.
+    
+    Tenemos así una probabilidad del $0.8836$ de obtener un valor para la media muestral que difiera en menos de $1 \; cm$ del valor real de la media cuando tomamos una muestra de trescientos individuos.
+    
+    Hay que observar que en ninguna parte hemos utilizado el hecho de que la media fuese exactamente $172 \; cm$. Es decir, si sabemos que la variable "altura" sigue una normal con una desviación típica de $11 \; cm$ y tomamos una muestra de $300$ estudiantes, sabemos que la diferencia entre su media y la media poblacional $\mu$ (que quizás no conozcamos) será menor de $1 \; cm$ con una probabiliad del $0.8836$.
+
+c) Consideremos ahora el problema inverso. Supongamos que desconocemos la media $\mu$ de la altura de los trescientos estudiantes y queremos estudiar una muestra de manera que la diferencia entre la media de la muestra y la de la población $\mu$ sea menor que $1 \; cm$ con una probabilidad del $0.95$. ¿De qué medida tiene que ser nuestra muestra?
+
+    Sabemos que la variable estadística tipificada:
+    
+    \[ \frac{\overline{X} - \mu}{\frac{11}{\sqrt{n}}} \]
+    
+    se distribuye como una normal $(0, 1)$. Por otra parte, si observamos las tablas, nos damos cuenta de que si $Z$ es una normal $(0, 1)$:
+    
+    \[ P(-1.96 < Z < 1.96) = 0.95 \]
+    
+    Por tanto:
+    
+    \[ 0.95 = P \left( -1.96 < \frac{\overline{X} - \mu}{\frac{11}{\sqrt{n}}} < 1.96 \right) = P \left( -1.96 \frac{11}{\sqrt{n}} < \overline{X} - \mu < 1.96 \frac{11}{\sqrt{n}} \right) \]
+    
+    Y si imponemos que la diferencia $\overline{X} - \mu$ debe ser menor que $1 \; cm$, obtenemos:
+    
+    \[ 1.96 \frac{11}{\sqrt{n}} < 1 \]
+    
+    Por tanto, $\sqrt{n} > 11 \cdot 1.96$, y así: $n > (11 \cdot 1.96)^2 = 464.8$. Entonces, si tomamos $465$ individuos para llevar a cabo el estudio, sabemos que la diferencia entre la media muestral que obtendremos y la media real será menor de $1 \; cm$, con una probabilidad del $0.95$. Cuanto mayor sea el tamaño de la muestra, menor será la diferencia entre la media muestral y la poblacional.
+
+Si se multiplican el numerador y el denominador por $n$, podemos escribir el resultado que hemos visto en este apartado de otra manera.
+
+\begin{shaded}
+  Si la variable que estudiamos sigue una distribución normal con media $mu$ y desviación típica $\sigma$, entonces:
+  
+  \[ \frac{\sum_{i = 1}^n X_i - n \mu}{\sqrt{n} \sigma} \]
+  
+  sigue una distribución normal estándar.
+\end{shaded}
