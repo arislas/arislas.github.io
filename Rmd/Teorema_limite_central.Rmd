@@ -126,7 +126,34 @@ Si se multiplican el numerador y el denominador por $n$, podemos escribir el res
 \begin{shaded}
   Si la variable que estudiamos sigue una distribución normal con media $mu$ y desviación típica $\sigma$, entonces:
   
-  \[ \frac{\sum_{i = 1}^n X_i - n \mu}{\sqrt{n} \sigma} \]
+  \[ \frac{\displaystyle \sum_{i = 1}^n X_i - n \mu}{\sqrt{n} \sigma} \]
   
   sigue una distribución normal estándar.
 \end{shaded}
+
+\subsection{Caso de desviación típica poblacional desconocida. La \textit{t} de Student}
+
+En los ejemplos estudiados anteriormente necesitábamos dos cosas:
+
++ Que la variable que se estudiaba fuese normal.
++ Que el valor de la desviación típica de la variable fuese conocido.
+
+Estos dos hechos se conocen gracias a estudios previos. A menudo este estudio no se lleva a cabo, pero podemos suponer que la variable es normal. En este caso deberemos hacer una estimación de la desviación típica con la llamada **desviación típica muestral**:
+
+\[ s = \sqrt{\frac{1}{n - 1} \sum_{i = 1}^n (x_i - \overline{x})^2} \]
+
+Hay que observar que en el caso de la desviación típica muestral se divide por $n - 1$, no por $n$.
+
+De manera que en los cálculos del apartado anterior reemplazaremos la $\sigma$ por la $s$. Entonces la distribución muestral de la media ya no es una distribución normal, como sucedía cuando en lugar de $s$ conocíamos el auténtico valor $\sigma$ de la desviación.
+
+Varios estudios realizados por W. S. Gosset, al final del siglo XIX, demostraron que en este caso se obtiene una distribución diferente a la normal, aunque para tamaños lo bastante grandes se parecen bastante. Esta nueva distribución se conoce con el nombre de *t de Student* con $n - 1$ grados de libertad. Esto significa que por cada medida de la muestra, $n$, en realidad tenemos una distribución diferente.
+
+\begin{shaded}
+  La \textbf{distribución \textit{t de Student} con $n$ grados de libertad}, que denotaremos por $t_n$ es muy parecida a la distribución normal $(0, 1)$: es simétrica alrededor del cero, pero su desviación típica es un poco mayor que la de la normal $(0, 1)$, es decir, los valores que toma esta variable están un poco más dispersos. No obstante, cuanto mayor es el número de grados de libertad, $n$, más se aproxima la distribución $t_n$ de Student a la distribución normal $(0, 1)$. Consideraremos que podemos aproximar la $t_n$ por una normal estándar para $n > 100$.
+\end{shaded}
+
+Observamos que cuando conocemos el valor auténtico de $\sigma$, la variable $\overline{X}$ sigue siempre una distribución normal, pero su varianza depende de $n$.
+
+El gráfico siguiente representa las funciones de densidad de la *t* de Student para diferentes valores de $n$ y con una línea más gruesa, la densidad de una distribución normal $(0, 1)$.
+
+![Funciones de densidad de probabilidad de la t de Student](imagenes_limite_central/Funciones_densidad_t_Student.png)
