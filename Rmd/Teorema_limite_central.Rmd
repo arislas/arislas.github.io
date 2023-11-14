@@ -43,7 +43,7 @@ La desviación poblacional es la desviación real de la variable, que en este ca
 
 Supongamos que en un estudio anterior se había demostrado que las alturas de los estudiantes seguían una distribución normal de media $172 \; cm$ y desviación típica de $11 \; cm$.
 
-Intuitivamente vemos que la media de las observacioens de la muestra que tenemos debe ser un valor cercano a $172$. También parece razonable pensar que observaciones mayores que la meida poblacional, $172$, se compensarán con valores menores, y que cuanto mayor sea la muestra, más cercano será el valor de la media muestral a $172$.
+Intuitivamente vemos que la media de las observaciones de la muestra que tenemos debe ser un valor cercano a $172$. También parece razonable pensar que observaciones mayores que la media poblacional, $172$, se compensarán con valores menores, y que cuanto mayor sea la muestra, más cercano será el valor de la media muestral a $172$.
 
 Pensemos ahora que tenemos una muestra de cien estudiantes. Hacemos diez grupos de diez estudiantes y hacemos la media aritmética para cada grupo. Obtenemos diez valores, correspondientes a las diez medias $\overline{x}_1, ..., \overline{x}_{10}$. Parece razonable pensar que la media de estos nuevos datos sería también $172$. Por otra parte, también parece razonable pensar que estos nuevos valores sean más cercanos a $172$ que los datos originales, ya que en cada una de las medias se nos habrán compensado valores grandes con valores pequeños.
 
