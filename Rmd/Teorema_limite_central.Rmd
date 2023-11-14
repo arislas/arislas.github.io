@@ -83,10 +83,14 @@ a) ¿Cuál es la probabilidad de que la media sea menor que $170 \; cm$?
     
     \[ \frac{11}{\sqrt{300}} = 0.635 \]
     
-    Tipificamos la variable para obtener una normal $(0,1). Debemos calcular:
+    Tipificamos la variable para obtener una normal $(0,1)$. Debemos calcular:
     
     \[ P(\overline{X} < 170) = P \left( \frac{\overline{X} - 172}{0.635} < \frac{-2}{0.635} \right) = P(Z < -3.149) = 0.0008 \]
     
     ya que $Z$ es una variable aleatoria normal $(0,1)$.
 
-b) ¿Cuál es la probabilidad de que la distancia entre la media muestral (de esta muestra de trescientos estudiantes) y la media poblacional, $152 \; cm$ sea menor que $1 \; cm$?
+b) ¿Cuál es la probabilidad de que la distancia entre la media muestral (de esta muestra de trescientos estudiantes) y la media poblacional, $172 \; cm$ sea menor que $1 \; cm$?
+
+    Por un razonamiento parecido (si la distancia entre dos números $a$ y $b$ ha de ser menor que $k$, se debe cumplir $|a - b| < k$):
+    
+    \[ P(|\overline{X} - \mu| < 1) = P(-1 < \overline{X} - \mu < 1) = P \left( -\frac{1}{0.635} < \frac{\overline{X}}{0.635} < \frac{1}{0.635} \right) = P(-1.57 < Z < 1.57) \]
