@@ -93,4 +93,4 @@ b) ¿Cuál es la probabilidad de que la distancia entre la media muestral (de es
 
     Por un razonamiento parecido (si la distancia entre dos números $a$ y $b$ ha de ser menor que $k$, se debe cumplir $|a - b| < k$):
     
-    \[ P(|\overline{X} - \mu| < 1) = P(-1 < \overline{X} - \mu < 1) = P \left( -\frac{1}{0.635} < \frac{\overline{X}}{0.635} < \frac{1}{0.635} \right) = P(-1.57 < Z < 1.57) \]
+    \[ P(|\overline{X} - \mu| < 1) = P(-1 < \overline{X} - \mu < 1) = P \left( -\frac{1}{0.635} < \frac{\overline{X} - \mu}{0.635} < \frac{1}{0.635} \right) = P(-1.57 < Z < 1.57) \]
