@@ -278,7 +278,7 @@ Consideremos la variable $X(n)$, que nos da el número de veces que nos han devu
 
 \begin{figure}[!ht]
   \centering
-  \includegraphics[width=0.6\textwidth]{imagenes_limite_central/Funcion_densidad_probabilidad_n3.png}
+  \includegraphics[width=0.8\textwidth]{imagenes_limite_central/Funcion_densidad_probabilidad_n3.png}
   \caption{Función de densidad de probabilidad para $n = 3$}
 \end{figure}
 
@@ -288,7 +288,7 @@ Si ahora consideramos $n = 10$, los posibles valores van del $0$ al $10$, y el g
 
 \begin{figure}[!ht]
   \centering
-  \includegraphics[width=0.6\textwidth]{imagenes_limite_central/Funcion_densidad_probabilidad_n10.png}
+  \includegraphics[width=0.8\textwidth]{imagenes_limite_central/Funcion_densidad_probabilidad_n10.png}
   \caption{Función de densidad de probabilidad para $n = 10$}
 \end{figure}
 
@@ -296,7 +296,7 @@ Si tomamos $n = 100$, el gráfico es:
 
 \begin{figure}[!ht]
   \centering
-  \includegraphics[width=0.6\textwidth]{imagenes_limite_central/Funcion_densidad_probabilidad_n100.png}
+  \includegraphics[width=0.8\textwidth]{imagenes_limite_central/Funcion_densidad_probabilidad_n100.png}
   \caption{Función de densidad de probabilidad para $n = 100$}
 \end{figure}
 
@@ -306,7 +306,7 @@ Y si por ejemplo tomamos $n = 500$, el gráfico de la función de probabilidad e
 
 \begin{figure}[!ht]
   \centering
-  \includegraphics[width=0.6\textwidth]{imagenes_limite_central/Funcion_densidad_probabilidad_n500.png}
+  \includegraphics[width=0.8\textwidth]{imagenes_limite_central/Funcion_densidad_probabilidad_n500.png}
   \caption{Función de densidad de probabilidad para $n = 500$}
 \end{figure}
 
