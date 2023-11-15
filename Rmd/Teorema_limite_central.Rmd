@@ -158,3 +158,53 @@ El gráfico siguiente representa las funciones de densidad de la *t* de Student 
 
 ![Funciones de densidad de probabilidad de la t de Student](imagenes_limite_central/Funciones_densidad_t_Student.png)
 
+Si $\sigma$ es desconocida y $n$ es el tamaño de la muestra, calcularemos el error estándar mediante el cociente:
+
+\[ \text{Error estándar} = \frac{s}{\sqrt{n}} \]
+
+Este error estándar nos permite obtener un resultado nuevo importante.
+
+\begin{shaded}
+  Si la variable que estudiamos sigue una distribución normal con media $\mu$ y desviación típica desconocida, entonces:
+  
+  \[ \frac{\overline{X}- \mu}{\frac{s}{\sqrt{n}}} \]
+  
+  sigue una distribución $t_{n - 1}$, es decir, una $t$ de Student con $n - 1$ grados de libertad.
+\end{shaded}
+
+Obviamente, la manera más fácil de calcular probabilidaddes relacionadas con una $t$ de Student es con cualquier *software* estadístico o, incluso, una hoja de cálculo. De todos modos, como en el caso de la normal, comentaremos cómo podemos utilizar unas tablas estadísticas.
+
+Las tablas que nos dan la distribución de la $t$ de Student son parecidas a las de la distribución normal estándar. No obstante, y dado que para cada valor de los grados de libertad tenemos una distribución diferente, las tablas habituales solo nos sirven para ocho probabilidades determinadas (para otros valores hay que utilizar algún *software* apropiado). La forma de utilizar las tablas es la siguiente: buscamos en la primera columna el número de grados de libertad, nos situamos en aquella fila y determinamos qué puntos nos dejan la probabilidad acumulada que nos interesa.
+
+**Ejemplo de utilización de las tablas de la $t$ de Student**
+
+Una empresa indica en un paquete de arroz que el peso medio del paquete es de $900$ gramos. En una inspección hemos analizado el peso en gramos de $10$ paquetes de arroz y hemos obtenido los datos siguientes:
+
+\begin{center}
+  \begin{tabular}{ccccc}
+    \qquad $890$ \qquad & \qquad $901$ \qquad & \qquad $893$ \qquad & \qquad $893$ \qquad & \qquad $896$ \qquad \\
+    \qquad $895$ \qquad & \qquad $894$ \qquad & \qquad $895$ \qquad & \qquad $904$ \qquad & \qquad $899$ \qquad
+  \end{tabular}
+\end{center}
+
+a) ¿Cuál es la probabilidad de que la distancia entre la media poblacional y la media muestral sea mayor de $3$ gramos?
+
+    Es razonable pensar que el peso en gramos de un paquete de arroz es una variable aleatoria normal con media del peso que indica el paquete, y con una desviación típica determinada. Es decir, de media los paquetes deberían tener $900$ gramos, pero a causa de los errores de medida de los aparatos que los llenan, algunos contendrán un poco más de $900$ gramos y otros, un poco menos. Supongamos, pues, que la variable de interés (el peso del paquete) es normal, pero no sabemos nada de su desviación típica. Con nuestros datos podemos estimar la desviación típica y obtenemos:
+    
+    \[ s = 4.19 \]
+    
+    Podemos utilizar el hecho de que $(\overline{X} - \mu) / (s / \sqrt{n})$ es una observación de una $t$ de Student con $n - 1$ grados de libertad (en nuestro ejemplo, puesto que tenemos diez datos, será una $t$ de Student con nueve grados de libertad). Ahora podemos calcular:
+    
+    \[ P(|\overline{X} - \mu| > 3) = 1 - P(-3 < \overline{X} - \mu < 3) = 1 - P \displaystyle \left( -\frac{3}{\frac{4.19}{\sqrt{10}}} < \frac{\overline{X} - \mu}{\frac{4.19}{\sqrt{10}}} < \frac{3}{\frac{4.19}{\sqrt{10}}} \right) = 1 - P(-2.26 < t_9 < 2.26) \]
+    
+    donde ya sabemos que $t_9$ es una t de Student con nueve grados de libertad. Podemos calcular esta probabilidad en las tablas:
+    
+    \[ P(-2.26 < t_9 < 2.26) = 1 - 2P(t_9 \geq 2.26) = 1 - 2 \cdot 0.025 = 0.95 \]
+    
+    Entonces:
+    
+    \[ 1 - P(-2.26 < t_9 < 2.26) = 1 - 0.95 = 0.05 \]
+    
+    Por tanto, a partir de estos datos, todo parece indicar que la empresa engaña a sus clientes. En efecto, si se toma una muestra de tamaño $10$, la probabilidad de que la diferencia entre la media muestral y la real sea mayor de solo $3$ gramos es de un $5 \; \%$. En cambio, la media de nuestra muestra es de $896$ gramos, 4 gramos menos que la cantidad que indica el paquete.
+    
+    En este caso los valores que nos han aparecido nos han permitido utilizar las tablas. En otras ocasiones necesitaremos utilizar el ordenador.
