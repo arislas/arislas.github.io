@@ -208,3 +208,36 @@ a) ¿Cuál es la probabilidad de que la distancia entre la media poblacional y l
     Por tanto, a partir de estos datos, todo parece indicar que la empresa engaña a sus clientes. En efecto, si se toma una muestra de tamaño $10$, la probabilidad de que la diferencia entre la media muestral y la real sea mayor de solo $3$ gramos es de un $5 \; \%$. En cambio, la media de nuestra muestra es de $896$ gramos, 4 gramos menos que la cantidad que indica el paquete.
     
     En este caso los valores que nos han aparecido nos han permitido utilizar las tablas. En otras ocasiones necesitaremos utilizar el ordenador.
+
+\subsection{Ejercicios}
+
+1. El gasto mensual de la familia mexicana Robles sigue una distribución normal de media de $3.000$ pesos y varianza $500$. Supongamos que el gasto de cada mes es independiente del de los otros meses. Si el ingreso anual es de $37.000$ pesos, ¿cuál es la probabilidad de que no gasten más de lo que ganan? ¿Cuánto deberían ganar para tener una seguridad del $99 \; \%$ de que no gastarán más de lo que han ganado?
+
+    a) Llamamos $X_A$ al gasto anual. Puesto que el gasto mensual $X_M$ sigue una ley normal de media $3000$ y desviación típica $\sqrt{500}$ y:
+    
+        \[ 12 \cdot 3000 = 36000 \text{ y } \sqrt{12 \cdot 500} = 77.4597 \]
+    
+        sabemos que $\displaystyle \frac{X_A - 36000}{77.4597}$ sigue una distribución normal estándar.
+    
+        Por tanto, la probabilidad de que la familia Robles gaste menos de $37000$ pesos es:
+    
+        \[ P(X_A < 37000) = P \left( \frac{X_A - 36000}{77.4597} < \frac{37000 - 36000}{77.4597} \right) = P(Z < 12.9099) \]
+    
+        donde $Z$ es una distribución normal estándar. Si observamos las tablas de la distribución normal estándar, observamos que la probabilidad de que sea menor que $3$ ya es $1$. Por tanto, la probabilidad es $1$, es decir, podemos asegurar con casi un $100 \; \%$ de certeza que no gastarán más de lo que ganan.
+        
+    b) Para responder a la segunda pregunta, debemos encontrar una cantidad $G$ tal que:
+    
+        \[ P(X_A < G) = P \left( \frac{X_A - 36000}{77.4597} < \frac{G - 36000}{77.4597} \right) = 0.99 \]
+        
+        Si observamos las tablas de la normal, vemos que la cantidad:
+        
+        \[ \frac{G - 36000}{77.4597} \]
+        
+        debería ser igual a $2.33$ y, por tanto, si resolvemos la ecuación:
+        
+        \[ \frac{G - 36000}{77.4597} = 2.33 \]
+        
+        obtenemos que es preciso que $G = 36180.4811$ para tener una seguridad del $99 \; \%$ de que la familia no gastará más de lo que gana.
+
+2. Hemos hecho una encuesta entre los hombres de una población determinada y, a partir de los resultados, deducimos que el peso de los hombres de esta población sigue una distribución normal de media $72$ kg. Para saber si los datos que hemos obtenido son fiables, pesamos a cuatro de los encuestados y obtenemos una media de $77.57$ kg, con una desviación típica de $3.5$ kg. ¿Tenemos suficientes motivos para pensar que los encuestados han mentido cuando nos han dicho su peso?
+
