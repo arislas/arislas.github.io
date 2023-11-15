@@ -288,3 +288,21 @@ Si tomamos $n = 100$, el gráfico es:
 Y si por ejemplo tomamos $n = 500$, el gráfico de la función de probabilidad es:
 
 ![Función de densidad de probabilidad para n = 500](imagenes_limite_central/Funcion_densidad_probabilidad_n500.png)
+
+Vemos, pues, que el perfil de este gráfico cada vez se parece más al de la función de densidad de probabilidad de una variable aleatoria normal. La conclusión que extraemos de este experimento es que si $n$ es lo bastante grande, la variable aleatoria $X(n)$ es aproximadamente normal. Determinaremos ahora la media y la desviación de esta variable aleatoria, que serán las correspondientes a la misma $X(n)$:
+
++ La esperanza de esta variable es:
+
+    \[ n \cdot p = 0.1 \cdot n \]
+
++ y la varianza:
+
+    \[ np(1 - p) = n(0.1) \cdot (0.9) = 0.09n \]
+
+Éstos serán los parámetros de la variable aleatoria normal que aproxima la distribución de $X(n)$. Así pues, si $n$ es lo bastante grande, $X(n)$ se comporta como una $N(0.1n; 0.09n)$.
+
+\begin{shaded}
+  Sea $X$ una variable aleatoria con distribución binomial de parámetros $n$ y $p$. Si $n$ es grande, entonces la distribución de $X$ es aproximadamente normal con esperanza $\mu = np$ y varianza $\sigma^2 = np(1 - p)$. En la práctica se suele utilizar esta aproximación cuando $np$ y $n(1 - p)$ son mayores que $5$, o bien cuando $n > 30$.
+\end{shaded}
+
+Este resultado nos permite simplificar bastante los cálculos en algunas situaciones.
