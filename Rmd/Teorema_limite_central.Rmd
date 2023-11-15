@@ -243,8 +243,18 @@ a) ¿Cuál es la probabilidad de que la distancia entre la media poblacional y l
 
     Observamos que la diferencia entre la media de nuestros datos y el valor poblacional es de $77.57 - 72 = 5.57$. Calcularemos la probabilidad de que, si escogemos a cuatro de los encuestados al azar, la media del peso de estos individuos difiera en $5.57$ kg o más de la media que conocemos de la población. Por tanto, debemos calcular:
     
-    \[ P(|\overline{X} - \mu| \geq 5.57) \]
+    \[ P(|\overline{X} - \mu | \geq 5.57) \]
     
     Si esta probabiliad fuese pequeña, nos indicaría que los encuestados seguramente han mentido sobre su peso. Con la ayuda de las tablas, calculamos la probabilidad del complementario:
     
+    \[ P(|\overline{X} - \mu | < 5.57) = P(-5.57 < \overline{X} - \mu < 5.57) = P \left( -\frac{5.57}{\frac{3.5}{\sqrt{4}}} < \frac{\overline{X} - \mu}{\frac{3.5}{\sqrt{4}}} < \frac{5.57}{\frac{3.5}{\sqrt{4}}} \right) = \]
     
+    \[ = P(-3.18 < t_3 < 3.18) = 1 - 2 P(t_3 \geq 3.18) = 1 - 0.05 = 0.95 \]
+    
+    donde $t_3$ es una $t$ de Student con tres grados de libertad. Debemos utilizar la $t$ de Student porque sabemos que la variable de interés sigue una distribución normal, pero desconocemos su desviación típica (solo tenemos la desviación típica de la muestra). Por tanto:
+    
+    \[ P( | \overline{X} - \mu | \geq 5.57) = 1 - P( | \overline{X} - \mu | < 5.57) = 0.05 \]
+    
+    Así pues, parece que nos han mentido, ya que la probabilidad de que la diferencia entre las medidas de los pesos que nos han dicho y $72$ es muy pequeña, del orden de $0.05$.
+    
+    Todos estos cálculos se pueden hacer con las tablas de la $t$ de Student.
