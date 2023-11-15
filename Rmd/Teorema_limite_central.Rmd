@@ -12,6 +12,7 @@ header-includes: # incluye paquetes latex
   - \renewcommand{\contentsname}{ÍNDICE} # cambia el nombre del indice
   - \usepackage{xlop} # operaciones aritmeticas
   - \usepackage{framed}\definecolor{shadecolor}{RGB}{224,238,238} # paquete para sombrear texto
+  - \usepackage{graphicx}
 date: "`r Sys.Date()`"
 ---
 
@@ -275,19 +276,39 @@ Supongamos que jugamos diariamente a un número de una lotería que, entre otros
 
 Consideremos la variable $X(n)$, que nos da el número de veces que nos han devuelto el importe jugado cuando se han realizado $n$ sorteos. En este caso sabemos que la variable aleatoria $X(n)$ sigue una distribución binomial de parámetros $n$ y $p = 0.1$. En efecto, se han hecho $n$ sorteos (es decir, se ha repetido un mismo experimento $n$ veces de manera independiente) y en cada sorteo la probabilidad de que nos devuelvan el dinero es $p = 1/10 = 0.1$ (probabilidad de éxito). Sin embargo, observemos qué sucede al aumentar el valor de $n$ con la función de densidad de probabilidad de la variable $X(n)$. Si dibujamos esta función de densidad de probabilidad para $n = 3$, obtenemos el gráfico siguiente:
 
-![Función de densidad de probabilidad para n = 3](imagenes_limite_central/Funcion_densidad_probabilidad_n3.png){width=400px}
+\begin{figure}[!ht]
+  \centering
+  \includegraphics[width=0.6\textwidth]{imagenes_limite_central/Funcion_densidad_probabilidad_n3.png}
+  \caption{Función de densidad de probabilidad para $n = 3$}
+\end{figure}
+
+\newpage
 
 Si ahora consideramos $n = 10$, los posibles valores van del $0$ al $10$, y el gráfico de la función de densidad de probabilidad es:
 
-![Función de densidad de probabilidad para n = 10](imagenes_limite_central/Funcion_densidad_probabilidad_n10.png){width=400px}
+\begin{figure}[!ht]
+  \centering
+  \includegraphics[width=0.6\textwidth]{imagenes_limite_central/Funcion_densidad_probabilidad_n10.png}
+  \caption{Función de densidad de probabilidad para $n = 10$}
+\end{figure}
 
 Si tomamos $n = 100$, el gráfico es:
 
-![Función de densidad de probabilidad para n = 100](imagenes_limite_central/Funcion_densidad_probabilidad_n100.png){width=400px}
+\begin{figure}[!ht]
+  \centering
+  \includegraphics[width=0.6\textwidth]{imagenes_limite_central/Funcion_densidad_probabilidad_n100.png}
+  \caption{Función de densidad de probabilidad para $n = 100$}
+\end{figure}
+
+\newpage
 
 Y si por ejemplo tomamos $n = 500$, el gráfico de la función de probabilidad es:
 
-![Función de densidad de probabilidad para n = 500](imagenes_limite_central/Funcion_densidad_probabilidad_n500.png){width=400px}
+\begin{figure}[!ht]
+  \centering
+  \includegraphics[width=0.6\textwidth]{imagenes_limite_central/Funcion_densidad_probabilidad_n500.png}
+  \caption{Función de densidad de probabilidad para $n = 500$}
+\end{figure}
 
 Vemos, pues, que el perfil de este gráfico cada vez se parece más al de la función de densidad de probabilidad de una variable aleatoria normal. La conclusión que extraemos de este experimento es que si $n$ es lo bastante grande, la variable aleatoria $X(n)$ es aproximadamente normal. Determinaremos ahora la media y la desviación de esta variable aleatoria, que serán las correspondientes a la misma $X(n)$:
 
