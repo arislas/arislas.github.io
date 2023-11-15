@@ -241,3 +241,10 @@ a) ¿Cuál es la probabilidad de que la distancia entre la media poblacional y l
 
 2. Hemos hecho una encuesta entre los hombres de una población determinada y, a partir de los resultados, deducimos que el peso de los hombres de esta población sigue una distribución normal de media $72$ kg. Para saber si los datos que hemos obtenido son fiables, pesamos a cuatro de los encuestados y obtenemos una media de $77.57$ kg, con una desviación típica de $3.5$ kg. ¿Tenemos suficientes motivos para pensar que los encuestados han mentido cuando nos han dicho su peso?
 
+    Observamos que la diferencia entre la media de nuestros datos y el valor poblacional es de $77.57 - 72 = 5.57$. Calcularemos la probabilidad de que, si escogemos a cuatro de los encuestados al azar, la media del peso de estos individuos difiera en $5.57$ kg o más de la media que conocemos de la población. Por tanto, debemos calcular:
+    
+    \[ P(|\overline{X} - \mu| \geq 5.57) \]
+    
+    Si esta probabiliad fuese pequeña, nos indicaría que los encuestados seguramente han mentido sobre su peso. Con la ayuda de las tablas, calculamos la probabilidad del complementario:
+    
+    
