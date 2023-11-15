@@ -258,3 +258,7 @@ a) ¿Cuál es la probabilidad de que la distancia entre la media poblacional y l
     Así pues, parece que nos han mentido, ya que la probabilidad de que la diferencia entre las medidas de los pesos que nos han dicho y $72$ es muy pequeña, del orden de $0.05$.
     
     Todos estos cálculos se pueden hacer con las tablas de la $t$ de Student.
+
+\newpage
+
+\section{El teorema del límite central}
