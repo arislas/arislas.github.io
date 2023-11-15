@@ -262,3 +262,14 @@ a) ¿Cuál es la probabilidad de que la distancia entre la media poblacional y l
 \newpage
 
 \section{El teorema del límite central}
+
+La distribución de la media muestral de una población normal es una distribución normal con la misma media poblacional y con desviación típica el error estándar. Este hecho nos permite calcular probabilidades cuando tenemos una muestra de una variable con distribución normal y desviación típica conocida. Cuando no conocemos la desviación típica de la variable, también podemos hacer cálculos con la distribución $t$ de Student.
+
+Ahora veremos cómo debemos proceder cuando no sabemos si la variable de interés sigue una distribución normal o no, o cuando sabemos seguro que su distribución no es normal.
+
+Cuando la muestra es lo bastante grande, la solución nos viene dada por uno de los resultados fundamentales de la estadística: el teorema del límite central. Lo introduciremos con un caso particular: el estudio de la binomial.
+
+\subsection{Aproximación de la binomial a la normal}
+
+Supongamos que jugamos diariamente a un número de una lotería que, entre otros premios, devuelve el importe jugado a todos los números que acaban en la misma cifra que el número ganador.
+
