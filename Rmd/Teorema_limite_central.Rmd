@@ -274,3 +274,5 @@ Cuando la muestra es lo bastante grande, la solución nos viene dada por uno de 
 Supongamos que jugamos diariamente a un número de una lotería que, entre otros premios, devuelve el importe jugado a todos los números que acaban en la misma cifra que el número ganador.
 
 Consideremos la variable $X(n)$, que nos da el número de veces que nos han devuelto el importe jugado cuando se han realizado $n$ sorteos. En este caso sabemos que la variable aleatoria $X(n)$ sigue una distribución binomial de parámetros $n$ y $p = 0.1$. En efecto, se han hecho $n$ sorteos (es decir, se ha repetido un mismo experimento $n$ veces de manera independiente) y en cada sorteo la probabilidad de que nos devuelvan el dinero es $p = 1/10 = 0.1$ (probabilidad de éxito). Sin embargo, observemos qué sucede al aumentar el valor de $n$ con la función de densidad de probabilidad de la variable $X(n)$. Si dibujamos esta función de densidad de probabilidad para $n = 3$, obtenemos el gráfico siguiente:
+
+![Función de densidad de probabilidad para n = 3](imagenes_limite_central/Funcion_densidad_probabilidad_n3.png)
