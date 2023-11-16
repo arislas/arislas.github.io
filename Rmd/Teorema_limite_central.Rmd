@@ -359,3 +359,33 @@ Hay que observar que hemos calculado $P(X(365) \geq 50)$, pero que esta cantidad
 \end{gather}
 
 que es una cantidad ligeramente diferente de la obtenida antes. Se dice que este valor se ha obtenido haciendo una corrección de continuidad, ya que aproximamos una variable discreta por una continua. Podemos considerar buenos los dos resultados.
+
+\subsubsection{Estudio de la proporción}
+
+Hemos visto que cuando $n$ es grande, podemos aproximar una binomial $(n, p)$ por una normal de parámetros $\mu = np$ y $\sigma^2 = np(1 - p)$. Por otro lado, sabemos que podemos considerar la variable aleatoria binomial como la suma de $n$ variables aleatorias con distribución de Bernoulli de parámetro $p$. Si dividimos esta suma por $n$, obtenemos claramente la proporción de éxitos.
+
+\begin{shaded}
+  Una proporción corresponde a hacer la media de $n$ variables aleatorias de Bernoulli de parámetro $p$, donde $n$ es el tamaño de la muestra y $p$, la probabilidad de éxito de cada acontecimiento individual.
+\end{shaded}
+
+**Ejemplo de cálculo de una proporción**
+
+Si queremos calcular la proporción de catalanes que se ha conectado hoy a Internet, podemos considerar que a cada catalán le corresponde una variable Bernoulli que vale $1$ si se conecta o $0$ si no lo hace. Para calcular la proporción, debemos dividir el número de catalanes que se han conectado por el número total de catalanes.
+
+Puesto que hemos visto que la suma de $n$ distribuciones de Bernoulli de parámetro $p$, que es una binomial $(n, p)$, es aproximadamente una distribución normal con media $np$ y varianza $np(1 - p)$, está claro que la proporción (que es la suma de las $n$ distribuciones de Bernoulli dividida por $n$), tendrá esperanza $p$ y desviación típica $\sqrt{p(1 - p) / n}$.
+
+\begin{shaded}
+  Por tanto, cuando el tamaño de la muestra $n$, es grande, la distribución de la proporción es aproximadamente una distribución normal de esperanza $p$ y desviación típica $\sqrt{p(1 - p) /n}$. En este caso $\sqrt{p(1 - p) / n}$ corresponde al error estándar.
+\end{shaded}
+
+**Ejemplo de distribución de la proporción**
+
+Preguntamos a una muestra de habitantes de una población su opinión sobre la posible construcción de un pantano. La probabilidad de que un individuo concreto de la población esté de acuerdo con la construcción del pantano es $p$, y $n$ es el número de habitantes entrevistados. El $30 \; \%$ de los encuestados está a favor de la construcción del pantano, es decir, podemos establecer que $p = 0.3$. Si hemos preguntado a cuatrocientos habitantes, entonces encontramos que la distribución de la proporción de habitantes que están a favor de la construcción del pantano, que denotaremos por $p$, es:
+
+\[ N \left( 0.3; \frac{0.3 (1 - 0.3)}{400} \right) = N(0.3; 0.0005) \]
+
+Para calcular la probabilidad de que la proporción de habitantes a favor sea mayor del $40 \; \%$, deberíamos hacer:
+
+\[ P(\hat{p} > 0.4) = P \left( \frac{\hat{p} - 0.3}{\sqrt{0.0005}} > \frac{0.4 - 0.3}{\sqrt{0.0005}} \right) = P(Z > 4.47) = 0 \]
+
+donde $Z$ indica una distribución normal estándar.
