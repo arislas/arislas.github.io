@@ -327,3 +327,35 @@ Vemos, pues, que el perfil de este gráfico cada vez se parece más al de la fun
 \end{shaded}
 
 Este resultado nos permite simplificar bastante los cálculos en algunas situaciones.
+
+**Ejemplo de la lotería**
+
+¿Cuál es la probabilidad aproximada de que en un año nos hayan devuelto el dinero al menos cincuenta veces? De hecho, debemos calcular la probabilidad $P(X(365) \geq 50)$. Si quisiéramos obtener el valor exacto de esta probabilidad, por el hecho de que $X(365)$ es una binomial de parámetros $365$ y $p = 0.1$, deberíamos hacer el cálculo siguiente:
+
+\begin{gather}
+  P(X(365) \geq 50) = 1 - P(X(365) < 50) = \nonumber \\
+  = 1 - P(X(365) = 0) - P(X(365) = 1) - P(X(365) =2) - \hdots - P(X(365) = 49 \nonumber)
+\end{gather}
+
+donde cada una de estas probabilidades se encontraría mediante la fórmula de la binomial:
+
+\[ P(X(365) = K) = \binom{365}{k}(0.1)^k (0.9)^{365 - k} \]
+
+En cambio, si renunciamos a pedir que la probabilidad sea exacta y nos conformamos con una muy buena aproximación, podemos utilizar el hecho de que la distribución de $X(365)$ se puede aproximar por una normal de parámetros $\mu = 365 \cdot 0.1 = 36.5$ y $\sigma^2 = 365 \cdot 0.09 = 32.85$. Así:
+
+\[ P(X(365) \geq 50) = P \left( \frac{X(365) - 36.5}{\sqrt{32.85}} \geq \frac{50 - 36.5}{\sqrt{32.85}} \right) \]
+
+y si llamamos $Z$ a una variable aleatoria normal $(0, 1)$, esta probabilidad será aproximadamente:
+
+\[ P \left( Z \geq \frac{50 - 36.5}{\sqrt{32.85}} \right) = P(Z \geq 2.36) = 0.0091 \]
+
+Por tanto, la probabilidad aproximada de que nos devuelvan el dinero cincuenta veces o más a lo largo del año es únicamente del $0.0091$.
+
+Hay que observar que hemos calculado $P(X(365) \geq 50)$, pero que esta cantidad es la misma que $P(X(365) \geq 49.5)$, ya que la variable solo toma valores naturales. Si la aproximamos por la normal, obtendremos:
+
+\begin{gather}
+  P(X(365) \geq 49.5) = P \left( \frac{X(365) - 36.5}{\sqrt{32.85}} \geq \frac{49.5 - 36.5}{\sqrt{32.85}} \right) = \nonumber \\
+  = P \left( Z \geq \frac{49.5 - 36.5}{\sqrt{32.85}} \right) = P(Z \geq 2.26) = 0.0119
+\end{gather}
+
+que es una cantidad ligeramente diferente de la obtenida antes. Se dice que este valor se ha obtenido haciendo una corrección de continuidad, ya que aproximamos una variable discreta por una continua. Podemos considerar buenos los dos resultados.
