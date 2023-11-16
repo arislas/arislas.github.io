@@ -389,3 +389,37 @@ Para calcular la probabilidad de que la proporción de habitantes a favor sea ma
 \[ P(\hat{p} > 0.4) = P \left( \frac{\hat{p} - 0.3}{\sqrt{0.0005}} > \frac{0.4 - 0.3}{\sqrt{0.0005}} \right) = P(Z > 4.47) = 0 \]
 
 donde $Z$ indica una distribución normal estándar.
+
+\subsection{El teorema del límite central}
+
+Sabemos que la distribución de la media muestral de una variable normal o bien tiene distribución normal o bien se corresponde con una $t$ de Student. También hemos visto que si las variables originales siguen una distribución de Bernoulli, entonces su media es una proporción y, en este caso, cuando $n$ es lo bastante grande, su distribución muestral también es una normal.
+
+El último resultado es cierto sea cual sea la distribución de los datos originales. Es decir, no es preciso que partamos ni de distribuciones normales ni de distribuciones de Bernoulli, ya que para muestras de tamaños lo bastante grandes, la distribución de la media muestral es normal sea cual sea la distribución original. Este resultado fundamental de la estadística tiene un nombre propio: *el teorema del límite central*.
+
+\begin{shaded}
+  \textbf{El teorema del límite central} dice que si una muestra es lo bastante grande $(n > 30)$, sea cual sea la distribución de la variable de interés, la distribución de la media muestral será aproximadamente una normal. Además, la media será la misma que la de la variable de interés, y la desviación típica de la media muestral será aproximadamente el error estándar.
+\end{shaded}
+
+Una consecuencia de este teorema es la siguiente:
+
+\begin{shaded}
+  Dada cualquier variable aleatoria con esperanza $\mu$ y para $n$ lo bastante grande, la distribución de la variable $(\overline{X} - \mu) / (\text{error estándar})$ es una normal estándar.
+\end{shaded}
+
+**Ejemplo de aplicación del teorema del límite central**
+
+Una empresa de mensajería que opera en la ciudad tarda una media de $35$ minutos en llevar un paquete, con una desviación típica de $8$ minutos. Supongamos que durante el día de hoy han repartido doscientos paquetes.
+
+a) ¿Cuál es la probabilidad de que la media de los tiempos de entrega de hoy esté entre $30$ y $35$ minutos?
+
+    Consideremos la variable $X = \text{"Tiempo de entrega del paquete"}$. Sabemos que su media es $35$ minutos y su desviación típica, $8$. Pero no sabemos si esta variable sigue una distribución normal. Durante el día de hoy se han entregado $n = 200$ paquetes. Es decir, tenemos una muestra $x_1, x_2, \hdots, x_n$ de nuestra variable.
+    
+    Por el teorema del límite central sabemos que la media muestral se comporta como una normal de esperanza $35$ y desviación típica:
+    
+    \[ \frac{8}{\sqrt{200}} = 0.566 \]
+    
+    Si utilizamos esta aproximación, ya podemos contestar a la pregunta a). Debemos calcular:
+    
+    \[ P(30 \leq \overline{X} \leq 35) = P \left( \frac{30 - 35}{0.566} \leq \frac{\overline{X} - 35}{0.566} \leq \frac{35 - 35}{0.566} \right) \]
+
+b) ¿Cuál es la probabilidad de que, en total, para los doscientos paquetes hayan estado más de $115$ horas?
