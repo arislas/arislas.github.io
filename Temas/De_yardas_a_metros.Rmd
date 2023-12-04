@@ -8,10 +8,14 @@ date: "2023-12-04"
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-Para pasar de yardas a metros, y en general para pasar de una medida a otra, usaremos la regla de tres puesto que se guarda la proporción.
+Para pasar de yardas a metros, y en general, para pasar de una unidad a otra unidad proporcional, usaremos la regla de tres.
 
 Sabemos que una yarda son 0.914 metros, así que si quiero saber cuántos metros son 4532.6 yardas, plantearé la siguiente regla de tres:
 
-\begin{gather}
-  a
-\end{gather}
+\begin{gather*}
+  \begin{array}{lcr}
+    1 \, \text{yarda} & = & 0.914 \, \text{metros} \\
+    4532.6 \, \text{yardas} & = & x \, \text{metros}
+  \end{array} \\
+\end{gather*}
+\[ x = \frac{4532.6 \cdot 0.914}{1} = 4532.6 \cdot 0.914 = 4142.796 \, \text{metros} \]
