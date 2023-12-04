@@ -1,0 +1,17 @@
+---
+title: "De yardas a metros"
+output: pdf_document
+date: "2023-12-04"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Para pasar de yardas a metros, y en general para pasar de una medida a otra, usaremos la regla de tres puesto que se guarda la proporción.
+
+Sabemos que una yarda son 0.914 metros, así que si quiero saber cuántos metros son 4532.6 yardas, plantearé la siguiente regla de tres:
+
+\begin{gather}
+  a
+\end{gather}
