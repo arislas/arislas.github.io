@@ -1,5 +1,5 @@
 ---
-title: "PLANTILLA"
+title: "Precisión en las medidas"
 output:
   pdf_document:
     latex_engine: pdflatex # usa pdflatex
