@@ -19,3 +19,4 @@ date: "`r Sys.Date()`"
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+El margen de error es una cantidad que oscila alrededor de la cantidad exacta. Por ejemplo, si decimos que algo mide $145 \, cm$ con un margen de error de $\pm 5 \, cm$, estamos diciendo que la medida real estará entre $140 \, cm$ y $150 \, cm$.
