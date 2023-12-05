@@ -19,6 +19,13 @@ Para calcular el área de un rectángulo aplicaremos la ecuación:
 
 \[ A_{\text{Rectángulo}} = \text{base} \cdot \text{altura} = b \cdot a \]
 
+\begin{figure}[!ht]
+  \centering
+  \includegraphics[width=0.3\textwidth]{imagenes/areaRectangulo01.png}
+  \caption{Rectángulo de $6.5 \, cm$ de base y $3.1 \, cm$ de altura}
+  \label{fig:rectangulo01}
+\end{figure}
+
 Si la base de un rectángulo  mide $6.5$ cm y la altura mide $3.1$ cm, su área será:
 
 ```{r echo = FALSE}
