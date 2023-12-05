@@ -33,3 +33,9 @@ ar01 <- 6.5 * 3.1
 ```
 
 \[ A_{\text{Rectángulo}} = b \cdot a = 6.5 \cdot 3.1 = `r ar01` \, cm^2 \]
+
+El cuadrado es un rectángulo particular, tiene la base igual a la altura. Como base y altura son iguales, los llamamos lados y el área del cuadrado será:
+
+\[ A_{\text{Cuadrado}} = b \cdot a = l \cdot l = l^2 \]
+
+donde $b$ es la base, $a$ es la altura y $l$ es el lado.
