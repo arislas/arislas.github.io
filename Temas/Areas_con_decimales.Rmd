@@ -1,12 +1,7 @@
 ---
-title: "Calculo áreas con decimales"
-date: "`r Sys.Date()`"
+title: "Áreas con decimales"
 output: pdf_document
-  pdf_document:
-    latex_engine: pdflatex # usa pdflatex
-    number_sections: yes # numera las secciones
-    toc: false # escribe el índice
-    toc_depth: 3 # profundidad del indice 3
+date: "`r Sys.Date()`"
 header-includes: # incluye paquetes latex
   - \usepackage{titletoc} # paquete para el indice
   - \titlecontents{section}[0em]{\bfseries}{}{}{\titlerule*[1pc]{.}\contentspage} # cambia el nombre del indice
@@ -20,3 +15,14 @@ header-includes: # incluye paquetes latex
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+Para calcular el área de un rectángulo aplicaremos la ecuación:
+
+\[ A_{\text{Rectángulo}} = \text{base} \cdot \text{altura} = b \cdot a \]
+
+Si la base de un rectángulo  mide $6.5$ cm y la altura mide $3.1$ cm, su área será:
+
+```{r echo = FALSE}
+ar01 <- 6.5 * 3.1
+```
+
+\[ A_{\text{Rectángulo}} = b \cdot a = 6.5 \cdot 3.1 = `r ar01` \, cm^2 \]
