@@ -1,0 +1,192 @@
+---
+title: "Python"
+output: pdf_document
+date: "`r Sys.Date()`"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# VARIABLES AND SIMPLE DATA TYPES
+
++ Changing Case in a String with Methods
+
+    ```{python}
+    # Escribe la primera letra de cada palabra en mayúscula
+    name = "ada lovelace"
+    print(name.title())
+
+    # Escribe toda la palabra en mayúsculas
+    print(name.upper())
+
+    # Escribe toda la palabra en minúsculas
+    print(name.lower())
+    ```
+
++ Using Variables in Strings
+
+    ```{python}
+    first_name = "ada"
+    last_name = "lovelace"
+    full_name = f"{first_name} {last_name}"
+    print(full_name)
+    ```
+    
++ Adding Whitespace to Strings with Tabs or Newlines
+
+    ```{python}
+    print("Languages:\n\tPython\n\tC\n\tJavaScript")
+    ```
+
++ Stripping Whitespace
+
+    ```{python}
+    favorite_language = ' python '
+    favorite_language.rstrip()
+    favorite_language.lstrip()
+    favorite_language.strip()
+    ```
+
++ Removing Prefixes
+
+    ```{python}
+    nostarch_url = 'https://nostarch.com'
+    nostarch_url.removeprefix('https://')
+    ```
+    
++ Underscores in Numbers
+
+    ```{python}
+    universe_age = 14_000_000_000
+    print(universe_age)
+    ```
+    
++ Multiple Assignment
+
+    ```{python}
+    x, y, z = 0, 0, 0
+    ```
+
+# INTRODUCING LISTS
+
+```{python}
+bicycles = ['trek', 'cannondale', 'redline', 'specialized']
+print(bicycles)
+```
+
++ Accessing Elements in a List
+
+    ```{python}
+    print(bicycles[0].title())
+    ```
+    
+    Python has a special syntax for accessing the last element in a list. If you ask for the item at index -1, Python always returns the last item in the list:
+    
+    ```{python}
+    print(bicycles[-1])
+    ```
+
++ Using Individual Values from a List
+
+    ```{python}
+    message = f"My first bicycle was a {bicycles[0].title()}."
+    print(message)
+    ```
+
++ Modifying Elements in a List
+
+    ```{python}
+    motorcycles = ['honda', 'yamaha', 'suzuki']
+    print(motorcycles)
+    motorcycles[0] = 'ducati'
+    print(motorcycles)
+    ```
+
++ Adding Elements to a List
+
+    ```{python}
+    motorcycles = ['honda', 'yamaha', 'suzuki']
+    print(motorcycles)
+    motorcycles.append('ducati')
+    print(motorcycles)
+    ```
+    
++ Inserting Elements into a List
+
+    ```{python}
+    motorcycles = ['honda', 'yamaha', 'suzuki']
+    motorcycles.insert(0, 'ducati')
+    print(motorcycles)
+    ```
+
++ Removing an Item Using the del Statement
+
+    ```{python}
+    motorcycles = ['honda', 'yamaha', 'suzuki']
+    print(motorcycles)
+    del motorcycles[0]
+    print(motorcycles)
+    ```
+
++ Removing an Item Using the pop() Method
+
+    ```{python}
+    motorcycles = ['honda', 'yamaha', 'suzuki']
+    print(motorcycles)
+    popped_motorcycle = motorcycles.pop()
+    print(motorcycles)
+    print(popped_motorcycle)
+    ```
+
++ Popping Items from Any Position in a List
+
+    ```{python}
+    motorcycles = ['honda', 'yamaha', 'suzuki']
+    first_owned = motorcycles.pop(0)
+    print(f"The first motorcycle I owned was a {first_owned.title()}.")
+    ```
+
++ Removing an Item by Value
+
+    ```{python}
+    motorcycles = ['honda', 'yamaha', 'suzuki', 'ducati']
+    print(motorcycles)
+    motorcycles.remove('ducati')
+    print(motorcycles)
+    ```
+
++ Sorting a List Permanently with the sort() Method
+
+    ```{python}
+    cars = ['bmw', 'audi', 'toyota', 'subaru']
+    cars.sort()
+    print(cars)
+    ```
+
++ Sorting a List Temporarily with the sorted() Function
+
+    ```{python}
+    cars = ['bmw', 'audi', 'toyota', 'subaru']
+    print("Here is the original list:")
+    print(cars)
+    print("\nHere is the sorted list:")
+    print(sorted(cars))
+    print("\nHere is the original list again:")
+    print(cars)
+    ```
++ Printing a List in Reverse Order
+
+    ```{python}
+    cars = ['bmw', 'audi', 'toyota', 'subaru']
+    print(cars)
+    cars.reverse()
+    print(cars)
+    ```
+
++ Finding the Length of a List
+
+    ```{python}
+    cars = ['bmw', 'audi', 'toyota', 'subaru']
+    len(cars)
+    ```
