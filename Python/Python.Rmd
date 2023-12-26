@@ -1,12 +1,19 @@
 ---
 title: "Python"
-output: pdf_document
+output:
+  pdf_document:
+    latex_engine: pdflatex # usa pdflatex
+    number_sections: yes # numera las secciones
+    toc: true # escribe el índice
+    toc_depth: 3 # profundidad del indice 3
 date: "`r Sys.Date()`"
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+
+\newpage
 
 # VARIABLES AND SIMPLE DATA TYPES
 
@@ -190,3 +197,188 @@ print(bicycles)
     cars = ['bmw', 'audi', 'toyota', 'subaru']
     len(cars)
     ```
+
+# WORKING WITH LISTS
+
++ Looping Through an Entire List
+
+    ```{python}
+    magicians = ['alice', 'david', 'carolina']
+    for magician in magicians:
+      print(magician)
+    ```
+
++ Using the range() Function
+
+    ```{python}
+    for value in range(1, 5):
+      print(value)
+    ```
+
++ Using range() to Make a List of Numbers
+
+    ```{python}
+    numbers = list(range(1, 6))
+    print(numbers)
+    
+    even_numbers = list(range(2, 11, 2))
+    print(even_numbers)
+    
+    squares = []
+    for value in range(1,11):
+      squares.append(value**2)
+    print(squares)
+    ```
+
++ Simple Statistics with a List of Numbers
+
+    ```{python}
+    digits = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
+    min(digits)
+    max(digits)
+    sum(digits)
+    ```
+
++ List Comprehensions
+
+    ```{python}
+    squares = [value**2 for value in range(1, 11)]
+    print(squares)
+    ```
+
++ Slicing a List
+
+    ```{python}
+    players = ['charles', 'martina', 'michael', 'florence', 'eli']
+    print(players[0:3])
+    
+    print(players[:4])
+    
+    print(players[2:])
+    
+    # con el signo negativo cuenta desde el final
+    print(players[-3:])
+    ```
+
++ Looping Through a Slice
+
+    ```{python}
+    print("Here are the first three players on my team:")
+    for player in players[:3]:
+      print(player.title())
+    ```
+
++ Copying a List
+
+    ```{python}
+    my_foods = ['pizza', 'falafel', 'carrot cake']
+    friend_foods = my_foods[:]
+    print("My favorite foods are:")
+    print(my_foods)
+    print("\nMy friend's favorite foods are:")
+    print(friend_foods)
+    ```
+
++ Defining a Tuple
+    Las tuplas son como las listas, pero no se pueden modificar. Si queremos cambiar una tupla tenemos que redefinirla.
+
+    ```{python}
+    dimensions = (200, 50)
+    print(dimensions[0])
+    print(dimensions[1])
+    ```
+
+# IF STATEMENTS
+
++ A Simple Example
+
+    ```{python}
+    cars = ['audi', 'bmw', 'subaru', 'toyota']
+    for car in cars:
+      if car == 'bmw':
+        print(car.upper())
+      else:
+        print(car.title())
+    ```
+
++ Checking for Inequality
+
+    ```{python}
+    requested_topping = 'mushrooms'
+    if requested_topping != 'anchovies':
+      print("Hold the anchovies!")
+    ```
+
++ Numerical Comparisons
+
+    ```{python}
+    answer = 17
+    if answer != 42:
+      print("That is not the correct answer. Please try again!")
+    ```
+
++ Checking Whether a Value Is in a List
+
+    ```{python}
+    requested_toppings = ['mushrooms', 'onions', 'pineapple']
+    'mushrooms' in requested_toppings
+    'pepperoni' in requested_toppings
+    ```
+
++ Checking Whether a Value Is Not in a List
+
+    ```{python}
+    banned_users = ['andrew', 'carolina', 'david']
+    user = 'marie'
+    if user not in banned_users:
+      print(f"{user.title()}, you can post a response if you wish.")
+    ```
+
++ Testing Multiple Conditions
+    The if- elif- else block would stop running after only one test passes.
+    
++ Using if Statements with Lists
+
+    ```{python}
+    requested_toppings = ['mushrooms', 'green peppers', 'extra cheese']
+    for requested_topping in requested_toppings:
+      print(f"Adding {requested_topping}.")
+    print("\nFinished making your pizza!")
+    ```
+    
+    ```{python}
+    for requested_topping in requested_toppings:
+      if requested_topping == 'green peppers':
+        print("Sorry, we are out of green peppers right now.")
+      else:
+        print(f"Adding {requested_topping}.")
+    print("\nFinished making your pizza!")
+    ```
+
++ Checking That a List Is Not Empty
+
+    ```{python}
+    requested_toppings = []
+    if requested_toppings:
+      for requested_topping in requested_toppings:
+        print(f"Adding {requested_topping}.")
+      print("\nFinished making your pizza!")
+    else:
+      print("Are you sure you want a plain pizza?")
+    ```
+
++ Using Multiple Lists
+
+    ```{python}
+    available_toppings = ['mushrooms', 'olives', 'green peppers',
+    'pepperoni', 'pineapple', 'extra cheese']
+    requested_toppings = ['mushrooms', 'french fries', 'extra cheese']
+    for requested_topping in requested_toppings:
+      if requested_topping in available_toppings:
+        print(f"Adding {requested_topping}.")
+      else:
+        print(f"Sorry, we don't have {requested_topping}.")
+    print("\nFinished making your pizza!")
+    ```
+
+# DICTIONARIES
