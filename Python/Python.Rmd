@@ -382,3 +382,114 @@ print(bicycles)
     ```
 
 # DICTIONARIES
+
+```{python}
+alien_0 = {'color': 'green', 'points': 5}
+print(alien_0['color'])
+print(alien_0['points'])
+```
+
++ Adding New Key-Value Pairs
+
+    ```{python}
+    alien_0 = {'color': 'green', 'points': 5}
+    print(alien_0)
+    alien_0['x_position'] = 0
+    alien_0['y_position'] = 25
+    print(alien_0)
+    ```
+
++ Starting with an Empty Dictionary
+
+    ```{python}
+    alien_0 = {}
+    alien_0['color'] = 'green'
+    alien_0['points'] = 5
+    print(alien_0)
+    ```
+
++ Modifying Values in a Dictionary
+
+    ```{python}
+    alien_0 = {'color': 'green'}
+    print(f"The alien is {alien_0['color']}.")
+    alien_0['color'] = 'yellow'
+    print(f"The alien is now {alien_0['color']}.")
+    ```
+
++ Removing Key-Value Pairs
+
+    ```{python}
+    alien_0 = {'color': 'green', 'points': 5}
+    print(alien_0)
+    del alien_0['points']
+    print(alien_0)
+    ```
+
++ Using get() to Access Values
+
+    Using keys in square brackets to retrieve the value you’re interested in from a dictionary might cause one potential problem: if the key you ask for doesn’t exist, you’ll get an error.
+    
+    The get() method requires a key as a first argument. As a second optional argument, you can pass the value to be returned if the key doesn’t exist:
+
+    ```{python}
+    alien_0 = {'color': 'green', 'speed': 'slow'}
+    point_value = alien_0.get('points', 'No point value assigned.')
+    print(point_value)
+    ```
+
++ Looping Through a Dictionary
+
+    ```{python}
+    user_0 = {
+      'username': 'efermi',
+      'first': 'enrico',
+      'last': 'fermi',
+    }
+    
+    for key, value in user_0.items():
+      print(f"\nKey: {key}")
+      print(f"Value: {value}")
+    ```
+
++ Looping Through All the Keys in a Dictionary
+
+    ```{python}
+    favorite_languages = {
+      'jen': 'python',
+      'sarah': 'c',
+      'edward': 'rust',
+      'phil': 'python',
+    }
+    
+    for name in favorite_languages.keys():
+      print(name.title())
+    ```
+    
+    Looping through the keys is actually the default behavior when looping through a dictionary, so this code would have exactly the same output if you wrote:
+    
+    ```{python}
+    for name in favorite_languages:
+      print(name.title())
+    ```
+    
+    You can access the value associated with any key you care about inside the loop, by using the current key. Let’s print a message to a couple of friends about the languages they chose. We’ll loop through the names in the dictionary as we did previously, but when the name matches one of our friends, we’ll display a message about their favorite language:
+    
+    ```{python}
+    friends = ['phil', 'sarah']
+    for name in favorite_languages.keys():
+      print(f"Hi {name.title()}.")
+
+      if name in friends:
+        language = favorite_languages[name].title()
+        print(f"\t{name.title()}, I see you love {language}!")
+    ```
+    
+    You can also use the keys() method to find out if a particular person was polled. This time, let’s find out if Erin took the poll:
+    
+    ```{python}
+    if 'erin' not in favorite_languages.keys():
+      print("Erin, please take our poll!")
+    ```
+
++ Looping Through a Dictionary’s Keys in a Particular Order
