@@ -493,3 +493,196 @@ print(alien_0['points'])
     ```
 
 + Looping Through a Dictionary’s Keys in a Particular Order
+
+    ```{python}
+    for name in sorted(favorite_languages.keys()):
+      print(f"{name.title()}, thank you for taking the poll.")
+    ```
+
++ Looping Through All Values in a Dictionary
+
+    ```{python}
+    print("The following languages have been mentioned:")
+    for language in favorite_languages.values():
+      print(language.title())
+    ```
+    
+    This approach pulls all the values from the dictionary without checking for repeats. This might work fine with a small number of values, but in a poll with a large number of respondents, it would result in a very repetitive list. To see each language chosen without repetition, we can use a set. A set is a collection in which each item must be unique:
+    
+    ```{python}
+    print("The following languages have been mentioned:")
+    for language in set(favorite_languages.values()):
+      print(language.title())
+    ```
+    
+    You can build a set directly using braces and separating the elements with commas:
+    
+    ```{python}
+    languages = {'python', 'rust', 'python', 'c'}
+    languages
+    ```
+
++ A List of Dictionaries
+
+    ```{python}
+    alien_0 = {'color': 'green', 'points': 5}
+    alien_1 = {'color': 'yellow', 'points': 10}
+    alien_2 = {'color': 'red', 'points': 15}
+    aliens = [alien_0, alien_1, alien_2]
+    for alien in aliens:
+      print(alien)
+    ```
+    
+    A more realistic example would involve more than three aliens with code that automatically generates each alien. In the following example, we use range() to create a fleet of 30 aliens:
+    
+    ```{python}
+    # Make an empty list for storing aliens.
+    aliens = []
+    
+    # Make 30 green aliens.
+    for alien_number in range(30):
+      new_alien = {'color': 'green', 'points': 5, 'speed': 'slow'}
+      aliens.append(new_alien)
+    
+    # Show the first 5 aliens.
+    for alien in aliens[:5]:
+      print(alien)
+    print("...")
+    
+    # Show how many aliens have been created.
+    print(f"Total number of aliens: {len(aliens)}")
+    ```
+    
+    We can use a for loop and an if statement to change the color of the aliens. For example, to change the first three aliens to yellow, medium-speed aliens worth 10 points each, we could do this:
+    
+    ```{python}
+    # Make an empty list for storing aliens.
+    aliens = []
+
+    # Make 30 green aliens.
+    for alien_number in range (30):
+      new_alien = {'color': 'green', 'points': 5, 'speed': 'slow'}
+      aliens.append(new_alien)
+
+    for alien in aliens[:3]:
+      if alien['color'] == 'green':
+        alien['color'] = 'yellow'
+        alien['speed'] = 'medium'
+        alien['points'] = 10
+
+    # Show the first 5 aliens.
+    for alien in aliens[:5]:
+      print(alien)
+    print("...")
+    ```
+
++ A List in a Dictionary
+
+    ```{python}
+    # Store information about a pizza being ordered.
+    pizza = {
+      'crust': 'thick',
+      'toppings': ['mushrooms', 'extra cheese'],
+    }
+
+    # Summarize the order.
+    print(f"You ordered a {pizza['crust']}-crust pizza "
+      "with the following toppings:")
+    
+    for topping in pizza['toppings']:
+      print(f"\t{topping}")
+    ```
+    
+    You can nest a list inside a dictionary anytime you want more than one value to be associated with a single key in a dictionary.
+    
+    ```{python}
+    favorite_languages = {
+      'jen': ['python', 'rust'],
+      'sarah': ['c'],
+      'edward': ['rust', 'go'],
+      'phil': ['python', 'haskell'],
+    }
+
+    for name, languages in favorite_languages.items():
+      print(f"\n{name.title()}'s favorite languages are:")
+      for language in languages:
+        print(f"\t{language.title()}")
+    ```
+
++ A Dictionary in a Dictionary
+
+    ```{python}
+    users = {
+      'aeinstein': {
+        'first': 'albert',
+        'last': 'einstein',
+        'location': 'princeton',
+      },
+
+      'mcurie': {
+        'first': 'marie',
+        'last': 'curie',
+        'location': 'paris',
+      },
+    }
+
+    for username, user_info in users.items():
+      print(f"\nUsername: {username}")
+      full_name = f"{user_info['first']} {user_info['last']}"
+      location = user_info['location']
+
+      print(f"\tFull name: {full_name.title()}")
+      print(f"\tLocation: {location.title()}")
+    ```
+
+# USER INPUT AND WHILE LOOPS
+
++ How the input() Function Works
+
+    ```{python}
+    # message = input("Tell me something, and I will repeat it back to you: ")
+    # print(message)
+    ```
+
++ Writing Clear Prompts
+
+    ```{python}
+    # name = input("Please enter your name: ")
+    #print(f"\nHello, {name}!")
+    ```
+    
+    Sometimes you’ll want to write a prompt that’s longer than one line.
+    
+    ```{python}
+    # prompt = "If you share your name, we can personalize the messages you see."
+    # prompt += "\nWhat is your first name? "
+    
+    # name = input(prompt)
+    # print(f"\nHello, {name}!")
+    ```
+
++ Using int() to Accept Numerical Input
+
+    ```{python}
+    # height = input("How tall are you, in inches? ")
+    # height = int(height)
+
+    # if height >= 48:
+      # print("\nYou're tall enough to ride!")
+    # else:
+      # print("\nYou'll be able to ride when you're a little older.")
+    ```
+    
++ The Modulo Operator
+
+    ```{python}
+    # number = input("Enter a number, and I'll tell you if it's even or odd: ")
+    # number = int(number)
+    
+    # if number % 2 == 0:
+      # print(f"\nThe number {number} is even.")
+    # else:
+      # print(f"\nThe number {number} is odd.")
+    ```
+
++ The while Loop in Action
