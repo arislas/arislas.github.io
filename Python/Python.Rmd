@@ -1136,3 +1136,51 @@ print(alien_0['points'])
     ```
     
 + Using as to Give a Module an Alias
+
+    ```
+    import pizza as p
+
+    p.make_pizza(16, 'pepperoni')
+    p.make_pizza(12, 'mushrooms', 'green peppers', 'extra cheese')
+    ```
+    
+    The general syntax for this approach is:
+    
+    ```
+    import module_name as mn
+    ```
+
++ Importing All Functions in a Module
+
+    ```
+    from pizza import *
+    
+    make_pizza(16, 'pepperoni')
+    make_pizza(12, 'mushrooms', 'green peppers', 'extra cheese')
+    ```
+    Because every function is imported, you can call each function by name without using the dot notation. However, it’s best not to use this approach when you’re working with larger modules that you didn’t write: if the module has a function name that matches an existing name in your project, you can get unexpected results.
+    
++ Styling Functions
+
+    If you specify a default value for a parameter, no spaces should be used on either side of the equal sign.
+    
+    ```
+    def function_name(parameter_0, parameter_1='default value')
+    ```
+    
+    The same convention should be used for keyword arguments in function calls:
+    
+    ```
+    function_name(value_0, parameter_1='value')
+    ```
+
+    If a set of parameters causes a function’s definition to be longer than 79 characters, press ENTER after the opening parenthesis on the definition line. On the next line, press the TAB key twice to separate the list of arguments from the body of the function, which will only be indented one level.
+    
+    ```
+    def function_name(
+        parameter_0, parameter_1, parameter_2,
+        parameter_3, parameter_4, parameter_5):
+    function body...
+    
+# CLASSES
+
