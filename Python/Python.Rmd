@@ -1465,3 +1465,90 @@ print(alien_0['points'])
 + Importing Classes
 
 + Importing a Single Class
+
+    ```
+    from car import Car
+    
+    my_new_car = Car('audi', 'a4', 2024)
+    ```
+
++ Storing Multiple Classes in a Module
+
+    You can store as many classes as you need in a single module, although each class in a module should be related somehow. The classes Battery and ElectricCar both help represent cars, so let’s add them to the module car.py.
+    
+    Now we can make a new file called my_electric_car.py, import the ElectricCar class, and make an electric car:
+    
+    ```
+    from car import ElectricCar
+    
+    my_leaf = ElectricCar('nissan', 'leaf', 2024)
+    ```
+    
++ Importing Multiple Classes from a Module
+
+    ```
+    from car import Car, ElectricCar
+    
+    my_mustang = Car('ford', 'mustang', 2024)
+    my_leaf = ElectricCar('nissan', 'leaf', 2024)
+    ```
+
++ Importing an Entire Module
+
+    ```
+    import car
+    
+    my_mustang = car.Car('ford', 'mustang', 2024)
+    my_leaf = car.ElectricCar('nissan', 'leaf', 2024)
+    ```
+    
++ Importing All Classes from a Module
+
+    This method is not recommended for two reasons. First, it’s helpful to be able to read the import statements at the top of a file and get a clear sense of which classes a program uses. With this approach it’s unclear which classes you’re using from the module. This approach can also lead to confusion with names in the file. If you accidentally import a class with the same name as something else in your program file, you can create errors that are hard to diagnose.
+    
+    ```
+    from module_name import *
+    ```
+
++ Importing a Module into a Module
+
+    ```
+    electric_car.py
+    
+    from car import Car
+    
+    car.py
+    
+    my_cars.py
+    
+    from car import Car
+    from electric_car import ElectricCar
+    
+    my_mustang = Car('ford', 'mustang', 2024)
+    my_leaf = ElectricCar('nissan', 'leaf', 2024)
+    ```
+    
++ Using Aliases
+
+    ```
+    from electric_car import ElectricCar as EC
+    
+    my_leaf = EC('nissan', 'leaf', 2024)
+    ```
+    
+    You can also give a module an alias. Here’s how to import the entire electric_car module using an alias:
+    
+    ```
+    import electric_car as ec
+    
+    my_leaf = ec.ElectricCar('nissan', 'leaf', 2024)
+    ```
+
++ The Python Standard Library
+
+    ```
+    from random import randint
+    randint(1, 6)}
+    ```
+
+# FILES AND EXCEPTIONS
