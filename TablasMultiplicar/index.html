@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Tablas de Multiplicar</title>
+	<link rel="stylesheet" href="styles.css"
+</head>
+<body>
+
+<div id="game-container">
+    <h1>Tablas de Multiplicar</h1>
+    <p id="question">¿Te sabes las tablas?</p>
+    <input type="number" id="answer" placeholder="Introduce tu respuesta">
+    <p id="timer">Tiempo restante: 5 segundos</p>
+    <button id="start-btn">Comenzar</button>
+    <p id="result" class="hidden"></p>
+</div>
+
+<!-- Agregamos el archivo de sonido -->
+<audio id="timeout-sound" src="timeout-sound.mp3"></audio>
+
+<script src="app.js"></script>
+
+</body>
+</html>
