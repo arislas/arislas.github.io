@@ -1,0 +1,95 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[table,xcdraw,x11names]{xcolor} % Para los colores en las celdas de la tabla y las transparencias
+\usepackage{graphicx}
+\usepackage{transparent} % Paquete para aplicar transparencia a imágene
+\usepackage{fancyhdr}
+\usepackage{geometry}
+\usepackage{lastpage} % Para obtener el número total de páginas
+\usepackage[absolute,overlay]{textpos} % Paquete para posiciones absolutas
+\usepackage{atbegshi} % Paquete para controlar elementos en cada página
+\usepackage{eso-pic} % Paquete para añadir elementos en el fondo de la página
+\definecolor{verdeoscuro}{rgb}{0.0, 0.2, 0.0}
+\usepackage{longtable} % Para tablas de varias páginas
+\usepackage{array} % Para usar el entorno array dentro de celdas
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage[hidelinks]{hyperref}                                     %Para añadir enlaces.
+\geometry{a4paper, top=2cm, left=2cm, right=2cm, bottom=4.8cm}
+\setlength{\headheight}{70pt} % Ajusta la altura del encabezado según sea necesario
+\setlength{\footskip}{14.5pt} % Ajusta la distancia del pie de página al texto
+% Eliminar la indentación al principio de cada párrafo
+\setlength{\parindent}{0pt}
+% Establecer la distancia estándar entre párrafos
+\setlength{\parskip}{1.5em}
+
+% Configuración del encabezado y pie de página
+\pagestyle{fancy}
+\fancyhf{}
+
+% Encabezado personalizado
+\fancyhead[L]{
+    \begin{minipage}[b]{1.5cm}
+        \includegraphics[height=50pt]{imagenes/logo_cole_transp.png} % Logo o imagen1 en el encabezado
+    \end{minipage}
+    \hspace{0.2cm} % Espacio entre logo y texto
+    \begin{minipage}[b]{6cm}
+        \footnotesize{\textbf{CEIP MAR MEDITERRÁNEO} \\
+        Consejería de Desarrollo Educativo \\
+        y Formación Profesional \\
+        \vspace{0.01cm}}
+    \end{minipage}
+    \hspace{0.1cm} % Espacio entre el texto y la imagen europa.png
+    \begin{minipage}[b]{1.5cm}
+        \includegraphics[height=50pt]{imagenes/europa.png} % Imagen2 a la derecha del texto
+        \vspace{0.01cm}
+    \end{minipage}
+    \hspace{2.5cm} % Espacio entre las dos imágenes
+    \begin{minipage}[b]{2.5cm}
+        \includegraphics[height=30pt]{imagenes/junta.png} % Imagen3 a la derecha de imagen2
+        \vspace{-0.3cm} % Ajusta la posición vertical del número de página
+        \makebox[4cm][r]{\footnotesize{Página \thepage\ de \pageref{LastPage}}} % Número de página alineado a la derecha
+        \vspace{0.01cm}
+    \end{minipage}
+}
+
+% Configuración del texto en el pie de página usando 'fancyhdr'
+\fancyfoot[L]{
+    \begin{minipage}[t]{7cm} % Minipage para controlar el área del texto
+        \raggedright % Alinea el texto a la izquierda
+        \rule{7cm}{0.1pt} \\
+        \textcolor{verdeoscuro}{\footnotesize Calle José Morales Abad, 9. 04007 Almería} \\
+        \textcolor{verdeoscuro}{Tlf.: 950 15 62 03} \\
+        \textcolor{verdeoscuro}{04005326.edu@juntadeandalucia.es}
+    \end{minipage}
+}
+
+% Añadir la imagen escudo.png como fondo en todas las páginas en la esquina inferior derecha
+\AddToShipoutPictureBG{%
+    \AtPageLowerLeft{%
+        \put(\LenToUnit{\dimexpr\paperwidth-2.8cm\relax},\LenToUnit{0.2cm}){%
+            \transparent{0.2}\includegraphics[height=100pt]{imagenes/escudo.png} % Ajusta el tamaño de la imagen con transparencia
+        }
+    }
+}
+
+\renewcommand{\contentsname}{Índice}  % Cambia 'Contents' por 'Índice'
+
+\begin{document}
+
+\begin{center}
+    \section*{FECHAS IMPORTANTES}
+\end{center}
+
+\tableofcontents
+
+\newpage
+
+\sloppy % Para partir las palabras
+
+\section{Primer Trimestre}
+
+\begin{itemize}
+    \item 20240925 - Prueba de las tablas de multiplicar.
+\end{itemize}
+\end{document}
