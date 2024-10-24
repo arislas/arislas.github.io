@@ -1,0 +1,419 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[table,xcdraw,x11names]{xcolor} % Para los colores en las celdas de la tabla y las transparencias
+\usepackage{graphicx}
+\usepackage{transparent} % Paquete para aplicar transparencia a imágene
+\usepackage{fancyhdr}
+\usepackage{geometry}
+\usepackage{lastpage} % Para obtener el número total de páginas
+\usepackage[absolute,overlay]{textpos} % Paquete para posiciones absolutas
+\usepackage{atbegshi} % Paquete para controlar elementos en cada página
+\usepackage{eso-pic} % Paquete para añadir elementos en el fondo de la página
+\definecolor{verdeoscuro}{rgb}{0.0, 0.2, 0.0}
+\usepackage{longtable} % Para tablas de varias páginas
+\usepackage{array} % Para usar el entorno array dentro de celdas
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage[hidelinks]{hyperref}                                     %Para añadir enlaces.
+\geometry{a4paper, top=2cm, left=2cm, right=2cm, bottom=4.8cm}
+\setlength{\headheight}{70pt} % Ajusta la altura del encabezado según sea necesario
+\setlength{\footskip}{14.5pt} % Ajusta la distancia del pie de página al texto
+% Eliminar la indentación al principio de cada párrafo
+\setlength{\parindent}{0pt}
+% Establecer la distancia estándar entre párrafos
+\setlength{\parskip}{1.5em}
+
+% Configuración del encabezado y pie de página
+\pagestyle{fancy}
+\fancyhf{}
+
+% Encabezado personalizado
+\fancyhead[L]{
+    \begin{minipage}[b]{1.5cm}
+        \includegraphics[height=50pt]{imagenes/logo_cole_transp.png} % Logo o imagen1 en el encabezado
+    \end{minipage}
+    \hspace{0.2cm} % Espacio entre logo y texto
+    \begin{minipage}[b]{6cm}
+        \footnotesize{\textbf{CEIP MAR MEDITERRÁNEO} \\
+        Consejería de Desarrollo Educativo \\
+        y Formación Profesional \\
+        \vspace{0.01cm}}
+    \end{minipage}
+    \hspace{0.1cm} % Espacio entre el texto y la imagen europa.png
+    \begin{minipage}[b]{1.5cm}
+        \includegraphics[height=50pt]{imagenes/europa.png} % Imagen2 a la derecha del texto
+        \vspace{0.01cm}
+    \end{minipage}
+    \hspace{2.5cm} % Espacio entre las dos imágenes
+    \begin{minipage}[b]{2.5cm}
+        \includegraphics[height=30pt]{imagenes/junta.png} % Imagen3 a la derecha de imagen2
+        \vspace{-0.3cm} % Ajusta la posición vertical del número de página
+        \makebox[4cm][r]{\footnotesize{Página \thepage\ de \pageref{LastPage}}} % Número de página alineado a la derecha
+        \vspace{0.01cm}
+    \end{minipage}
+}
+
+% Configuración del texto en el pie de página usando 'fancyhdr'
+\fancyfoot[L]{
+    \begin{minipage}[t]{7cm} % Minipage para controlar el área del texto
+        \raggedright % Alinea el texto a la izquierda
+        \rule{7cm}{0.1pt} \\
+        \textcolor{verdeoscuro}{\footnotesize Calle José Morales Abad, 9. 04007 Almería} \\
+        \textcolor{verdeoscuro}{Tlf.: 950 15 62 03} \\
+        \textcolor{verdeoscuro}{04005326.edu@juntadeandalucia.es}
+    \end{minipage}
+}
+
+% Añadir la imagen escudo.png como fondo en todas las páginas en la esquina inferior derecha
+\AddToShipoutPictureBG{%
+    \AtPageLowerLeft{%
+        \put(\LenToUnit{\dimexpr\paperwidth-2.8cm\relax},\LenToUnit{0.2cm}){%
+            \transparent{0.2}\includegraphics[height=100pt]{imagenes/escudo.png} % Ajusta el tamaño de la imagen con transparencia
+        }
+    }
+}
+
+\renewcommand{\contentsname}{Índice}  % Cambia 'Contents' por 'Índice'
+
+\begin{document}
+
+\begin{center}
+    \section*{DIARIO DE CLASE}
+\end{center}
+
+\tableofcontents
+
+\newpage
+
+\sloppy % Para partir las palabras
+
+\section*{Repaso de cuarto}
+
+\subsection{20240918 - Repaso de cuarto.}
+
+\begin{enumerate}
+    \item Las tablas de multiplicar.
+    \item Mi primer programa en \textit{Python}.
+\end{enumerate}
+
+\subsection{20240919 - Repaso de cuarto.}
+
+\begin{enumerate}
+    \item Las tablas de multiplicar.
+    \item Mi primer programa en \textit{Python}.
+    \item Los números.
+    \begin{itemize}
+        \item Los números de seis cifras.
+        \item El valor de las cifras de un número.
+        \item Comparación y ordenación de números.
+        \item Aproximación de números.
+        \item Los números ordinales.
+        \item Los números romanos.
+    \end{itemize}
+    \item La suma y la resta.
+    \begin{itemize}
+        \item La suma y sus propiedades.
+        \item La resta. La prueba de la resta.
+        \item El paréntesis.
+        \item Cálculo estimado.
+    \end{itemize}
+    \item La multiplicación.
+    \begin{itemize}
+        \item La multiplicación y sus términos.
+        \item Las tablas de multiplicar.
+        \item Propiedades de la multiplicación.
+        \item Propiedad distributiva.
+        \item La multiplicación por una cifra.
+        \item La multiplicación por varias cifras.
+        \item La multiplicación por la unidad seguida de ceros.
+    \end{itemize}
+\end{enumerate}
+
+\subsection{20240920 - Repaso de cuarto.}
+
+\begin{enumerate}
+    \item Las tablas de multiplicar.
+    \item Mi primer programa en \textit{Python}.
+    \item Estadística y azar.
+    \begin{itemize}
+        \item Datos cualitativos y datos cuantitativos.
+        \item Tablas de registro de datos.
+        \item Pictogramas.
+        \item Gráficos de barras.
+        \item Gráficos de líneas.
+        \item Experiencias aleatorias y sucesos.
+    \end{itemize}
+    \item La división.
+    \begin{itemize}
+        \item La división como reparto.
+        \item La división como partición.
+        \item La prueba de la división.
+        \item La división con ceros en el cociente.
+        \item La división entre la unidad seguida de ceros.
+        \item Operaciones combinadas.
+    \end{itemize}
+    \item Las fracciones.
+    \begin{itemize}
+        \item Las fracciones y sus términos.
+        \item Medios, tercios y cuartos.
+        \item Nombramos a las fraciones.
+        \item Comparación de fracciones.
+    \end{itemize}
+\end{enumerate}
+
+\subsection{20240925 - Repaso de cuarto}
+
+\begin{enumerate}
+    \item Prueba de nivel de las tablas de multiplicar.
+    \item Los número decimales y el dinero.
+    \begin{itemize}
+        \item Fracción decimal y número decimal.
+        \item Uso de monedas y billetes.
+        \item Comparación y ordenación de decimales.
+        \item Aproximación de números decimales.
+        \item Suma y resta de números decimales.
+        \item Operaciones con euros y céntimos.
+    \end{itemize}
+    \item Geometría y orientación en el plano.
+    \begin{itemize}
+        \item Rectas, semirectas y segmentos.
+        \item Rectas paralelas y secantes.
+        \item Los ángulos.
+        \item Los ángulos según su abertura.
+        \item El ángulo como giro.
+        \item Traslación.
+        \item Simetría.
+        \item Simulación en el plano: coordenadas.
+        \item Orientación espacial.
+    \end{itemize}
+\end{enumerate}
+
+\subsection{20240926 - Repaso de cuarto}
+
+\begin{enumerate}
+    \item La medida del tiempo.
+    \begin{itemize}
+        \item El año: el calendario.
+        \item Lustros, décadas, siglos y milenios.
+        \item Días, horas, minutos y segundos.
+        \item Relojes analógicos y digitales.
+    \end{itemize}
+    \item La medida de la longitud.
+    \begin{itemize}
+        \item El metro y sus múltiplos.
+        \item Los submúltiplos del metro.
+        \item Expresiones complejas e incomplejas.
+        \item Operaciones con medidas de longitud.
+    \end{itemize}
+\end{enumerate}
+
+\subsection{20240927 - Repaso de cuarto}
+
+\begin{enumerate}
+    \item La medida de la capacidad y de la masa.
+    \begin{itemize}
+        \item La medida de la capacidad.
+        \item La medida de la masa.
+        \item Expresiones complejas e incomplejas.
+        \item Operaciones con capacidades y masas.
+    \end{itemize}
+    \item Figuras planas y cuerpos geométricos.
+    \begin{itemize}
+        \item Los polígonos.
+        \item Clasificación de polígonos.
+        \item Clasificación de triángulos.
+        \item Clasificación de cuadriláteros.
+        \item Introducción al área.
+        \item Circunferencia y círculo.
+        \item Poliedros. Prismas y pirámides.
+        \item Cuerpos redondos.
+    \end{itemize}
+\end{enumerate}
+
+\newpage
+
+\section{Primer Trimestre}
+
+\subsection{20241002 - Sesión 01 - Libro S1 y S2}
+
+\begin{itemize}
+    \item Conozo el valor posicional de cada cifra.
+    \begin{itemize}
+        \item Actividades 1, 2 y 3 página 3.
+        \item Opcional: Juego Reagrupo números, página 4.
+    \end{itemize}
+    \item Estimo y mido.
+    \begin{itemize}
+        \item Lectura: \textit{En busca de lombrices y diamantes I}. (Página 5).
+        \item Respondemos a las preguntas de la página 6.
+        \item Actividades 1 y 2 página 7.
+    \end{itemize}
+    \item Programo en \textit{Python}.
+    \begin{itemize}
+        \item Uso el comando \textbf{\textit{print}} para imprimir texto por pantalla.
+    \end{itemize}
+\end{itemize}
+
+\subsection{20241003 - Sesión 02 - Libro S3 y S4}
+
+\begin{itemize}
+    \item Revisión del trabajo de la sesión anterior.
+    \item Represento diagramas estadísticos.
+    \begin{itemize}
+        \item Actividades 1 y 2 página 8; 3 página 9.
+    \end{itemize}
+    \item Utilizo paréntesis.
+    \begin{itemize}
+        \item Analizamos la toma de decisiones, página 10.
+        \item Actividades 1, 2, 3 y 4 página 11.
+        \item Opcional: Juego Cubo 21.
+    \end{itemize}
+    \item Programo en \textit{Python}.
+    \begin{itemize}
+        \item Uso de variables para guardar datos.
+    \end{itemize}
+\end{itemize}
+
+\subsection{20241004 - Sesión 03 - Libro S5 y S6}
+
+\begin{itemize}
+    \item Revisión del trabajo de la sesión anterior.
+    \item Calculo distancias.
+    \begin{itemize}
+        \item Actividades 1 página 13; 2 y 3 página 14.
+    \end{itemize}
+    \item Multiplico centenas por centenas.
+    \begin{itemize}
+        \item Actividades 1, 2 y 3 página 16.
+    \end{itemize}
+    \item Programo en \textit{Python}.
+    \begin{itemize}
+        \item Uso el comando \textbf{\textit{print}} para imprimir por pantalla texto mezclado con el contenido de variables.
+    \end{itemize}
+\end{itemize}
+
+\subsection{20241009 - Sesión 04 - Libro S7 y S8}
+
+\begin{itemize}
+    \item Revisión del trabajo de la sesión anterior.
+    \item Interpreto datos.
+    \begin{itemize}
+        \item Actividades 1 página 17 y 2 página 18.
+    \end{itemize}
+    \item Multiplico dos números naturales con más de tres cifras.
+    \begin{itemize}
+        \item Lectura: \textit{En busca de lombrices y diamantes II.} (Página 19).
+        \item Respondemos a las preguntas de la página 20.
+        \item Actividades 1 y 2 página 21.
+    \end{itemize}
+    \item Programo con \textit{Python.}
+    \begin{itemize}
+        \item ¿Puedo hacer que \textit{Python} me escriba cualquier tabla de multiplicar I?
+    \end{itemize}
+\end{itemize}
+
+\subsection{20241010 - Sesión 05 - Libro S9 y S10}
+
+\begin{itemize}
+    \item Revisión del trabajo de la sesión anterior.
+    \item Aplico la multiplicación.
+    \begin{itemize}
+        \item Actividades 1, 2 y 3 página 22.
+        \item Opcional: Multiplicar con cuatro cubos, página 23.
+    \end{itemize}
+    \item Mido figuras rectangulares.
+    \begin{itemize}
+        \item Actividades 1, 2 y 3 página 25.
+    \end{itemize}
+    \item Programo con \textit{Python.}
+    \begin{itemize}
+        \item ¿Puedo hacer que \textit{Python} me escriba cualquier tabla de multiplicar II?
+    \end{itemize}
+\end{itemize}
+
+\subsection{20241016 - Sesión 06 - Libro S11 y S12}
+
+\begin{itemize}
+    \item Revisión del trabajo de la sesión anterior.
+    \item Interpreto restos.
+    \begin{itemize}
+        \item Lectura de la página 26.
+        \item Actividad 1 página 27.
+    \end{itemize}
+    \item Lectura: \textit{En busca de lombrices-diamante III}. (páginas 28 y 29).
+    \item Respondemos a las preguntas sobre la lectura de la página 29.
+    \item Practico la división.
+    \begin{itemize}
+        \item Actividades 1, 2 y 3 página 30.
+        \item Opcional: Cociente menor. (Página 31).
+    \end{itemize}
+    \item ¿Puedo hacer que \textit{Python} me escriba cualquier tabla de multiplicar III?
+\end{itemize}
+
+\subsection{20241017 - Sesión 07 - Libro S13 y S14}
+
+\begin{itemize}
+    \item Revisión del trabajo de la sesión anterior.
+    \item Relaciono el dinero y los números decimales.
+    \begin{itemize}
+        \item Actividades 1 y 2 página 32; 3 y 4 página 33.
+        \item Opcional: Reagrupo decimales. (Página 34).
+    \end{itemize}
+    \item Sumo, resto y comparo números decimales.
+    \begin{itemize}
+        \item Actividades 1, 2, 3 y 4 página 35; 5, 6, 7 y 8 página 36.
+    \end{itemize}
+    \item ¿Puedo hacer que \textit{Python} me escriba cualquier tabla de multiplicar IV?
+\end{itemize}
+
+\subsection{20241018 - Sesión 08 - Libro S15 y S16}
+
+\begin{itemize}
+    \item Lectura: \textit{En busca de lombrices-diamante IV}. (Páginas 37 y 38).
+    \item Respondemos a las preguntas sobre la lectura de la página 38.
+    \item Multiplico y divido decimales por potencias de 10.
+    \begin{itemize}
+        \item Actividades 1 y 2 página 39.
+    \end{itemize}
+    \item Aplico las aproximaciones.
+    \begin{itemize}
+        \item Actividades 1, 2, 3, 4 y 5 página 40.
+    \end{itemize}
+    \item ¿Puedo hacer que \textit{Python} me escriba cualquier tabla de multiplicar V?
+\end{itemize}
+
+\subsection{20241023 - Sesión 09 - Libro S13 y S14}
+
+\begin{itemize}
+    \item Revisión del trabajo de la sesión anterior.
+    \item Repaso: Operaciones con decimales.
+    \item Completamos las actividades que faltan por hacer de las páginas 32, 33, 35 y 36.
+    \item Repasamos el bucle \textbf{\textit{for}} en \textit{Python}.
+\end{itemize}
+
+\subsection{20241024 - Sesión 10 - Libro S15 y S16}
+
+\begin{itemize}
+    \item Revisión del trabajo de la sesión anterior.
+    \item Repaso: Divisiones por potencias de 10.
+    \item Repaso: Aplicamos las aproximaciones.
+    \item Completamos las actividades que faltan por hacer de las páginas 39 y 40.
+    \item Repasamos el bucle \textbf{\textit{for}} en \textit{Python}.
+\end{itemize}
+
+\subsection{20241025 - Sesión 11 - Libro S17 y S18}
+
+\begin{itemize}
+    \item Revisión del trabajo de la sesión anterior.
+    \item Lectura: \textit{En busca de lombrices-diamante V. (Páginas 41 y 42).}
+    \item Respondemos a las preguntas sobre la lectura de la página 42.
+    \item Relaciono unidades métricas.
+    \begin{itemize}
+        \item Actividades 1 página 43; 2, 3, 4 y 5 página 44.
+    \end{itemize}
+    \item Repaso los elementos de los polígonos.
+    \begin{itemize}
+        \item Actividades 1 y 2 página 45.
+    \end{itemize}
+\end{itemize}
+\end{document}
