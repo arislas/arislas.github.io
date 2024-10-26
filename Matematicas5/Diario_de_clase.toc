@@ -16,4 +16,5 @@
 \contentsline {subsection}{\numberline {1.9}20241023 - Sesión 09 - Libro S13 y S14}{10}{subsection.1.9}%
 \contentsline {subsection}{\numberline {1.10}20241024 - Sesión 10 - Libro S15 y S16}{10}{subsection.1.10}%
 \contentsline {subsection}{\numberline {1.11}20241025 - Sesión 11 - Libro S17 y S18}{10}{subsection.1.11}%
-\contentsline {subsection}{\numberline {1.12}20241031 - Sesión 12 - Libro S19 y S20}{11}{subsection.1.12}%
+\contentsline {subsection}{\numberline {1.12}20241030 - Sesión 12 - Libro S19 y S20}{11}{subsection.1.12}%
+\contentsline {subsection}{\numberline {1.13}20241031 - Sesión 13 - Prueba escrita}{11}{subsection.1.13}%
