@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.9.27)  26 OCT 2024 13:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.9.26)  4 NOV 2024 20:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -428,7 +428,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 2.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 2.
-<imagenes/logo_cole_transp.png, id=106, 437.4744pt x 433.62pt>
+<imagenes/logo_cole_transp.png, id=118, 437.4744pt x 433.62pt>
 File: imagenes/logo_cole_transp.png Graphic file (type png)
 <use imagenes/logo_cole_transp.png>
 Package pdftex.def Info: imagenes/logo_cole_transp.png  used on input line 19.
@@ -438,7 +438,7 @@ Overfull \hbox (7.75954pt too wide) has occurred while \output is active
 [][] 
  []
 
-<imagenes/europa.png, id=108, 505.6491pt x 250.7769pt>
+<imagenes/europa.png, id=120, 505.6491pt x 250.7769pt>
 File: imagenes/europa.png Graphic file (type png)
 <use imagenes/europa.png>
 Package pdftex.def Info: imagenes/europa.png  used on input line 19.
@@ -448,7 +448,7 @@ Overfull \hbox (58.13255pt too wide) has occurred while \output is active
 [][]
  []
 
-<imagenes/junta.png, id=109, 578.4009pt x 151.0443pt>
+<imagenes/junta.png, id=121, 578.4009pt x 151.0443pt>
 File: imagenes/junta.png Graphic file (type png)
 <use imagenes/junta.png>
 Package pdftex.def Info: imagenes/junta.png  used on input line 19.
@@ -463,7 +463,7 @@ Overfull \hbox (42.67914pt too wide) has occurred while \output is active
 []
  []
 
-<imagenes/escudo.png, id=111, 186.6975pt x 272.01625pt>
+<imagenes/escudo.png, id=123, 186.6975pt x 272.01625pt>
 File: imagenes/escudo.png Graphic file (type png)
 <use imagenes/escudo.png>
 Package pdftex.def Info: imagenes/escudo.png  used on input line 19.
@@ -809,7 +809,7 @@ Package pdftex.def Info: imagenes/escudo.png  used on input line 425.
 [10]
 File: imagenes/logo_cole_transp.png Graphic file (type png)
 <use imagenes/logo_cole_transp.png>
-Package pdftex.def Info: imagenes/logo_cole_transp.png  used on input line 446.
+Package pdftex.def Info: imagenes/logo_cole_transp.png  used on input line 469.
 (pdftex.def)             Requested size: 50.43866pt x 50.0pt.
 
 Overfull \hbox (7.75954pt too wide) has occurred while \output is active
@@ -818,7 +818,7 @@ Overfull \hbox (7.75954pt too wide) has occurred while \output is active
 
 File: imagenes/europa.png Graphic file (type png)
 <use imagenes/europa.png>
-Package pdftex.def Info: imagenes/europa.png  used on input line 446.
+Package pdftex.def Info: imagenes/europa.png  used on input line 469.
 (pdftex.def)             Requested size: 100.81168pt x 50.0pt.
 
 Overfull \hbox (58.13255pt too wide) has occurred while \output is active
@@ -827,7 +827,7 @@ Overfull \hbox (58.13255pt too wide) has occurred while \output is active
 
 File: imagenes/junta.png Graphic file (type png)
 <use imagenes/junta.png>
-Package pdftex.def Info: imagenes/junta.png  used on input line 446.
+Package pdftex.def Info: imagenes/junta.png  used on input line 469.
 (pdftex.def)             Requested size: 114.87498pt x 30.0pt.
 
 Overfull \hbox (43.7431pt too wide) has occurred while \output is active
@@ -841,9 +841,46 @@ Overfull \hbox (42.67914pt too wide) has occurred while \output is active
 
 File: imagenes/escudo.png Graphic file (type png)
 <use imagenes/escudo.png>
-Package pdftex.def Info: imagenes/escudo.png  used on input line 446.
+Package pdftex.def Info: imagenes/escudo.png  used on input line 469.
 (pdftex.def)             Requested size: 68.63542pt x 100.0pt.
-[11] 
+[11]
+File: imagenes/logo_cole_transp.png Graphic file (type png)
+<use imagenes/logo_cole_transp.png>
+Package pdftex.def Info: imagenes/logo_cole_transp.png  used on input line 494.
+(pdftex.def)             Requested size: 50.43866pt x 50.0pt.
+
+Overfull \hbox (7.75954pt too wide) has occurred while \output is active
+[][] 
+ []
+
+File: imagenes/europa.png Graphic file (type png)
+<use imagenes/europa.png>
+Package pdftex.def Info: imagenes/europa.png  used on input line 494.
+(pdftex.def)             Requested size: 100.81168pt x 50.0pt.
+
+Overfull \hbox (58.13255pt too wide) has occurred while \output is active
+[][]
+ []
+
+File: imagenes/junta.png Graphic file (type png)
+<use imagenes/junta.png>
+Package pdftex.def Info: imagenes/junta.png  used on input line 494.
+(pdftex.def)             Requested size: 114.87498pt x 30.0pt.
+
+Overfull \hbox (43.7431pt too wide) has occurred while \output is active
+[][]
+ []
+
+
+Overfull \hbox (42.67914pt too wide) has occurred while \output is active
+[]
+ []
+
+File: imagenes/escudo.png Graphic file (type png)
+<use imagenes/escudo.png>
+Package pdftex.def Info: imagenes/escudo.png  used on input line 494.
+(pdftex.def)             Requested size: 68.63542pt x 100.0pt.
+[12] 
 enddocument/afterlastpage: lastpage setting LastPage.
 (./Diario_de_clase.aux)
  ***********
@@ -851,21 +888,21 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 Package rerunfilecheck Info: File `Diario_de_clase.out' has not changed.
-(rerunfilecheck)             Checksum: 830AD2C02D0CF50AC8D409F3AC57450D;5016.
+(rerunfilecheck)             Checksum: 91E50670495F6279012F585810F1A0FE;5844.
  ) 
 Here is how much of TeX's memory you used:
- 10757 strings out of 476076
- 167821 string characters out of 5793775
+ 10764 strings out of 476076
+ 167924 string characters out of 5793775
  1943187 words of memory out of 5000000
- 32669 multiletter control sequences out of 15000+600000
+ 32672 multiletter control sequences out of 15000+600000
  563674 words of font info for 54 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  75i,18n,79p,391b,586s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on Diario_de_clase.pdf (11 pages, 1171669 bytes).
+Output written on Diario_de_clase.pdf (12 pages, 1174749 bytes).
 PDF statistics:
- 250 PDF objects out of 1000 (max. 8388607)
- 213 compressed objects within 3 object streams
- 54 named destinations out of 1000 (max. 500000)
- 189 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 271 PDF objects out of 1000 (max. 8388607)
+ 233 compressed objects within 3 object streams
+ 58 named destinations out of 1000 (max. 500000)
+ 213 words of extra memory for PDF output out of 10000 (max. 10000000)
 
