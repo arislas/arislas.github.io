@@ -21,4 +21,4 @@
 \contentsline {subsection}{\numberline {1.13}20241031 - Sesión 13 - Prueba escrita}{11}{subsection.1.13}%
 \contentsline {subsection}{\numberline {1.14}20241106 - Sesión 14 - Libro S21 y S22}{11}{subsection.1.14}%
 \contentsline {subsection}{\numberline {1.15}20241107 - Sesión 15 - Libro S23 y S24}{12}{subsection.1.15}%
-\contentsline {subsection}{\numberline {1.16}20241107 - Sesión 16 - Libro S25 y S26}{12}{subsection.1.16}%
+\contentsline {subsection}{\numberline {1.16}20241108 - Sesión 16 - Libro S25 y S26}{12}{subsection.1.16}%
