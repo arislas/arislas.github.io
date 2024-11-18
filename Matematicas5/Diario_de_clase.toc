@@ -24,4 +24,7 @@
 \contentsline {subsection}{\numberline {1.16}20241108 - Sesión 16 - Libro S25 y S26}{12}{subsection.1.16}%
 \contentsline {subsection}{\numberline {1.17}20241113 - Sesión 17 - Libro S27 y S28}{12}{subsection.1.17}%
 \contentsline {subsection}{\numberline {1.18}20241114 - Sesión 18 - Libro S29 y S30}{13}{subsection.1.18}%
-\contentsline {subsection}{\numberline {1.19}20241115 - Sesión 19 - Libro S31 y S32}{13}{subsection.1.19}%
+\contentsline {subsection}{\numberline {1.19}20241115 - Sesión 19 - Libro S31}{13}{subsection.1.19}%
+\contentsline {subsection}{\numberline {1.20}20241120 - Sesión 20 - Libro S32 y S33}{13}{subsection.1.20}%
+\contentsline {subsection}{\numberline {1.21}20241121 - Sesión 21 - Libro S34}{13}{subsection.1.21}%
+\contentsline {subsection}{\numberline {1.22}20241122 - Sesión 22 - Libro S}{13}{subsection.1.22}%
