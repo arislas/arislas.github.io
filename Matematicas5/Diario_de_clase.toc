@@ -28,3 +28,4 @@
 \contentsline {subsection}{\numberline {1.20}20241120 - Sesión 20 - Libro S32 y S33}{13}{subsection.1.20}%
 \contentsline {subsection}{\numberline {1.21}20241121 - Sesión 21 - Libro S34 y S35}{14}{subsection.1.21}%
 \contentsline {subsection}{\numberline {1.22}20241122 - Sesión 22 - Libro S36 y S37}{14}{subsection.1.22}%
+\contentsline {subsection}{\numberline {1.23}20241127 - Sesión 23 - Prueba escrita}{14}{subsection.1.23}%
