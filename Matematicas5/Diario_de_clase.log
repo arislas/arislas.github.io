@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.11.11)  21 NOV 2024 10:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.11.8)  27 NOV 2024 19:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -966,7 +966,7 @@ Package rerunfilecheck Info: File `Diario_de_clase.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  10780 strings out of 476076
- 168162 string characters out of 5793774
+ 168162 string characters out of 5793775
  1943187 words of memory out of 5000000
  32679 multiletter control sequences out of 15000+600000
  563674 words of font info for 54 fonts, out of 8000000 for 9000
