@@ -33,3 +33,4 @@
 \contentsline {subsection}{\numberline {1.25}20241129 - Sesión 25 - Repaso}{15}{subsection.1.25}%
 \contentsline {subsection}{\numberline {1.26}20241204 - Sesión 26 - Repaso}{15}{subsection.1.26}%
 \contentsline {subsection}{\numberline {1.27}20241205 - Sesión 27 - Repaso}{15}{subsection.1.27}%
+\contentsline {subsection}{\numberline {1.28}20241211 - Sesión 28 - Prueba escrita.}{15}{subsection.1.28}%
