@@ -36,3 +36,6 @@
 \contentsline {subsection}{\numberline {1.28}20241211 - Sesión 28 - Prueba escrita.}{16}{subsection.1.28}%
 \contentsline {subsection}{\numberline {1.29}20241212 - Sesión 29 - Repaso}{16}{subsection.1.29}%
 \contentsline {subsection}{\numberline {1.30}20241213 - Sesión 30 - Repaso}{17}{subsection.1.30}%
+\contentsline {subsection}{\numberline {1.31}20241218 - Sesión 31 - Repaso}{17}{subsection.1.31}%
+\contentsline {subsection}{\numberline {1.32}20241219 - Sesión 32 - Repaso}{17}{subsection.1.32}%
+\contentsline {subsection}{\numberline {1.33}20241220 - Sesión 33 - Repaso}{17}{subsection.1.33}%
