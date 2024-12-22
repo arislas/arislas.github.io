@@ -39,3 +39,4 @@
 \contentsline {subsection}{\numberline {1.31}20241218 - Sesión 31 - Repaso}{17}{subsection.1.31}%
 \contentsline {subsection}{\numberline {1.32}20241219 - Sesión 32 - Repaso}{17}{subsection.1.32}%
 \contentsline {subsection}{\numberline {1.33}20241220 - Sesión 33 - Repaso}{17}{subsection.1.33}%
+\contentsline {section}{\numberline {2}Segundo Trimestre}{18}{section.2}%
