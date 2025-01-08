@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.12.22)  8 JAN 2025 04:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2025.1.8)  8 JAN 2025 09:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/xto/Documentos/gitHub/arislas.github.io/Matematicas5/Diario_de_clase.tex
-(/home/xto/Documentos/gitHub/arislas.github.io/Matematicas5/Diario_de_clase.tex
+**/home/xto/Documentos/GitHub/arislas.github.io/Matematicas5/Diario_de_clase.tex
+(/home/xto/Documentos/GitHub/arislas.github.io/Matematicas5/Diario_de_clase.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
 (/usr/share/texmf-dist/tex/latex/base/article.cls
@@ -1114,7 +1114,7 @@ Package rerunfilecheck Info: File `Diario_de_clase.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  10812 strings out of 476076
- 168620 string characters out of 5793774
+ 168620 string characters out of 5793776
  1943187 words of memory out of 5000000
  32693 multiletter control sequences out of 15000+600000
  563674 words of font info for 54 fonts, out of 8000000 for 9000
