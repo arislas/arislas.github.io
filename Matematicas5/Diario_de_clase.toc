@@ -40,3 +40,6 @@
 \contentsline {subsection}{\numberline {1.32}20241219 - Sesión 32 - Repaso}{17}{subsection.1.32}%
 \contentsline {subsection}{\numberline {1.33}20241220 - Sesión 33 - Repaso}{17}{subsection.1.33}%
 \contentsline {section}{\numberline {2}Segundo Trimestre}{18}{section.2}%
+\contentsline {subsection}{\numberline {2.1}20250108 - Sesión 34 - Libro S38 y S39}{18}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}20250109 - Sesión 35 - Libro S40 y S41}{18}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}20250110 - Sesión 36 - Libro S42 y S43}{18}{subsection.2.3}%

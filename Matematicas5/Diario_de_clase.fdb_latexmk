@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1734885665.63854 "/home/xto/Documentos/gitHub/arislas.github.io/Matematicas5/Diario_de_clase.tex" "Diario_de_clase.pdf" "Diario_de_clase" 1734885666.76043 0
-  "/home/xto/Documentos/gitHub/arislas.github.io/Matematicas5/Diario_de_clase.tex" 1734885664.37475 24264 ffc23200208dbaf757f54daa109d4adb ""
+["pdflatex"] 1736307983.31272 "/home/xto/Documentos/gitHub/arislas.github.io/Matematicas5/Diario_de_clase.tex" "Diario_de_clase.pdf" "Diario_de_clase" 1736307984.39307 0
+  "/home/xto/Documentos/gitHub/arislas.github.io/Matematicas5/Diario_de_clase.tex" 1736307982.038 25570 3133743845e9bce321b750d8c6620d66 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1727349926 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1727349926 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm" 1727349926 1536 74b7293ec3713bb7fdca8dd1bd1f469c ""
@@ -89,10 +89,10 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1727349926 41588 b43d3e860a4f94167ee1e725ff526a72 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1734884157.89054 5312047 b07fcd2a9090df96fc745b92a3db793b ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1734884141 7113014 3d7910b310661e9a0c7f5dbba4d9b977 ""
-  "Diario_de_clase.aux" 1734885666.6981 6641 645849f6990f6f44b8349a4e154c0131 "pdflatex"
-  "Diario_de_clase.out" 1734885666.6981 10129 b4237300a78d0347cf087935274c4083 "pdflatex"
-  "Diario_de_clase.tex" 1734885664.37475 24264 ffc23200208dbaf757f54daa109d4adb ""
-  "Diario_de_clase.toc" 1734885666.6981 4222 d80b9b4bb5b4cd199f063566f2d1f61b "pdflatex"
+  "Diario_de_clase.aux" 1736307984.33139 7106 2f2439b6828393381919cda5987c1d85 "pdflatex"
+  "Diario_de_clase.out" 1736307984.33472 10954 615cb098fe68ef232c5484711f78c381 "pdflatex"
+  "Diario_de_clase.tex" 1736307982.038 25570 3133743845e9bce321b750d8c6620d66 ""
+  "Diario_de_clase.toc" 1736307984.33472 4540 4a8fddca3d45fcd72e3d2b6f0334da62 "pdflatex"
   "imagenes/escudo.png" 1734885632.26124 9614 6d609bda8ea49b559e4d19bc914047af ""
   "imagenes/europa.png" 1734885632.26124 77684 6bcbfcf2b5b983ba4cccc09b74a6fe76 ""
   "imagenes/junta.png" 1734885632.26457 185176 aefbcd65c1988628480cb69960786c15 ""
