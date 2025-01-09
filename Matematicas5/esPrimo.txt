@@ -5,14 +5,16 @@ Para saber si un número es primo o compuesto basta con dividirlo por los númer
 
 Ejemplos:
 
-163:2->C81 R1; 163:3->C54 R1; 163:5->C32 R3; 163:7->C23 R2; 163:11->C14 R9; 163:13->C14 R9 
+1) 163:2->C81 R1; 163:3->C54 R1; 163:5->C32 R3; 163:7->C23 R2; 163:11->C14 R9; 163:13->C14 R9 
 
 En este caso hemos llegado a un cociente (12) menor que el divisor (13) y no hemos obtenido ninguna división exacta, así que concluimos que 163 es primo.
 
-181:2->C90 R1; 181:3->C60 R1; 181:5->C36 R1; 181:7->C25 R6; 181:11->C16 R5; 181:13->C13 R13
+
+2) 181:2->C90 R1; 181:3->C60 R1; 181:5->C36 R1; 181:7->C25 R6; 181:11->C16 R5; 181:13->C13 R13
 
 En este caso hemos llegado a un cociente (13) igual que el divisior (13) y no hemos obtenido ninguna división exacta, así que concluimos que 181 es primo.
 
-721:2->C360 R1; 721:3->260 R1; 721:5->144 R1; 721:7->C103 R0
+
+3) 721:2->C360 R1; 721:3->260 R1; 721:5->144 R1; 721:7->C103 R0
 
 En este caso llegamos a una división exacta antes de llegar a un cociente menor o igual que el divisor, por tanto, 721 es compuesto.
