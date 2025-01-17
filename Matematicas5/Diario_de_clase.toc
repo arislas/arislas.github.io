@@ -49,3 +49,6 @@
 \contentsline {subsection}{\numberline {2.7}20250122 - Sesión 40 - Libro S50 y S51}{20}{subsection.2.7}%
 \contentsline {subsection}{\numberline {2.8}20250123 - Sesión 41 - Libro S52}{20}{subsection.2.8}%
 \contentsline {subsection}{\numberline {2.9}20250124 - Sesión 42 - Libro S53}{20}{subsection.2.9}%
+\contentsline {subsection}{\numberline {2.10}20250129 - Sesión 43 - Libro S54}{20}{subsection.2.10}%
+\contentsline {subsection}{\numberline {2.11}20250130 - Sesión 44 - Libro S55}{21}{subsection.2.11}%
+\contentsline {subsection}{\numberline {2.12}20250131 - Sesión 45 - Prueba escrita}{21}{subsection.2.12}%

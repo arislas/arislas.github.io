@@ -1,7 +1,7 @@
-PWD /home/xto/Documentos/GitHub/arislas.github.io/Matematicas5
+PWD /home/xto/Documents/gitHub/arislas.github.io/Matematicas5
 INPUT /usr/share/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
-INPUT /home/xto/Documentos/GitHub/arislas.github.io/Matematicas5/Fechas_importantes.tex
+INPUT /home/xto/Documents/gitHub/arislas.github.io/Matematicas5/Fechas_importantes.tex
 OUTPUT Fechas_importantes.log
 INPUT /usr/share/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/share/texmf-dist/tex/latex/base/article.cls
