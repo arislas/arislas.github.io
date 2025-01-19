@@ -52,3 +52,4 @@
 \contentsline {subsection}{\numberline {2.10}20250129 - Sesión 43 - Libro S54}{21}{subsection.2.10}%
 \contentsline {subsection}{\numberline {2.11}20250130 - Sesión 44 - Libro S55}{21}{subsection.2.11}%
 \contentsline {subsection}{\numberline {2.12}20250131 - Sesión 45 - Prueba escrita}{21}{subsection.2.12}%
+\contentsline {subsection}{\numberline {2.13}20250205 - Sesión 46 - Libro S56}{21}{subsection.2.13}%
