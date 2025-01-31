@@ -53,4 +53,4 @@
 \contentsline {subsection}{\numberline {2.11}20250130 - Sesión 44 - Libro S55}{21}{subsection.2.11}%
 \contentsline {subsection}{\numberline {2.12}20250131 - Día de la paz.}{21}{subsection.2.12}%
 \contentsline {subsection}{\numberline {2.13}20250205 - Sesión 45 - Prueba escrita}{21}{subsection.2.13}%
-\contentsline {subsection}{\numberline {2.14}20250205 - Sesión 46 - Libro S56}{21}{subsection.2.14}%
+\contentsline {subsection}{\numberline {2.14}20250206 - Sesión 46 - Libro S56}{21}{subsection.2.14}%
