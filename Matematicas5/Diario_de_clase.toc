@@ -59,3 +59,5 @@
 \contentsline {subsection}{\numberline {2.17}20250213 - Sesión 49 - Libro S62 y S63}{23}{subsection.2.17}%
 \contentsline {subsection}{\numberline {2.18}20250214 - Sesión 50 - Libro S64 y S65}{24}{subsection.2.18}%
 \contentsline {subsection}{\numberline {2.19}20250219 - Sesión 51 - Libro S66 y S67}{24}{subsection.2.19}%
+\contentsline {subsection}{\numberline {2.20}20250220 - Sesión 52 - Libro S68 y S69}{24}{subsection.2.20}%
+\contentsline {subsection}{\numberline {2.21}20250221 - Sesión 53 - Libro S70 y S71}{24}{subsection.2.21}%
