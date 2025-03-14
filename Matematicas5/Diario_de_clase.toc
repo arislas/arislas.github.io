@@ -66,3 +66,5 @@
 \contentsline {subsection}{\numberline {2.24}20250306 - Sesión 55 - Libro S74 y S75}{25}{subsection.2.24}%
 \contentsline {subsection}{\numberline {2.25}20250307 - Sesión 56 - Repaso}{25}{subsection.2.25}%
 \contentsline {subsection}{\numberline {2.26}20250312 - Sesión 57 - Prueba escrita}{25}{subsection.2.26}%
+\contentsline {subsection}{\numberline {2.27}20250313 - Sesión 58 - Repaso}{26}{subsection.2.27}%
+\contentsline {subsection}{\numberline {2.28}20250314 - Sesión 59 - Semana cultural}{26}{subsection.2.28}%
