@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.3.24)  9 APR 2025 12:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.3.24)  11 APR 2025 10:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1556,7 +1556,7 @@ LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
 Package rerunfilecheck Info: File `Diario_de_clase.out' has not changed.
-(rerunfilecheck)             Checksum: BABC30F442056AF6455CDC826B19CFE6;20504.
+(rerunfilecheck)             Checksum: 62386BB406F735F6633339BB4806B6DC;20504.
  ) 
 Here is how much of TeX's memory you used:
  11235 strings out of 475171
@@ -1567,7 +1567,7 @@ Here is how much of TeX's memory you used:
  14 hyphenation exceptions out of 8191
  75i,18n,79p,407b,590s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on Diario_de_clase.pdf (29 pages, 1210248 bytes).
+Output written on Diario_de_clase.pdf (29 pages, 1210249 bytes).
 PDF statistics:
  690 PDF objects out of 1000 (max. 8388607)
  631 compressed objects within 7 object streams
