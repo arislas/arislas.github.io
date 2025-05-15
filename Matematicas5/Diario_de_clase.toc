@@ -88,5 +88,5 @@
 \contentsline {subsection}{\numberline {3.8}20250408 - Sesión 76 - Libro S88}{31}{subsection.3.8}%
 \contentsline {subsection}{\numberline {3.9}20250509 - Prueba escrita}{31}{subsection.3.9}%
 \contentsline {subsection}{\numberline {3.10}20250514 - Sesión 77 - Libro S89 y S90}{31}{subsection.3.10}%
-\contentsline {subsection}{\numberline {3.11}20250515 - Sesión 78 - Libro }{31}{subsection.3.11}%
-\contentsline {subsection}{\numberline {3.12}20250516 - Sesión 79 - Libro }{31}{subsection.3.12}%
+\contentsline {subsection}{\numberline {3.11}20250515 - Sesión 78 - Libro S91 y S92}{31}{subsection.3.11}%
+\contentsline {subsection}{\numberline {3.12}20250516 - Sesión 79 - Libro S93 y S94}{31}{subsection.3.12}%
