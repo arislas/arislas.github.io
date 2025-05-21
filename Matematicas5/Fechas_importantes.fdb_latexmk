@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1746457023.54338 "/home/xto/Documents/gitHub/arislas.github.io/Matematicas5/Fechas_importantes.tex" "Fechas_importantes.pdf" "Fechas_importantes" 1746457024.65018 0
-  "/home/xto/Documents/gitHub/arislas.github.io/Matematicas5/Fechas_importantes.tex" 1746457023.37257 4458 94c9a739b5ab46119ed038044a2787ae ""
+["pdflatex"] 1747813559.30292 "/home/xto/Documents/gitHub/arislas.github.io/Matematicas5/Fechas_importantes.tex" "Fechas_importantes.pdf" "Fechas_importantes" 1747813560.42476 0
+  "/home/xto/Documents/gitHub/arislas.github.io/Matematicas5/Fechas_importantes.tex" 1747813559.10712 4578 833fb221515e5d3323eb3e44654c6036 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1742685315 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1742685315 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm" 1742685315 1536 74b7293ec3713bb7fdca8dd1bd1f469c ""
@@ -78,10 +78,10 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1742685315 42087 b0f9697c952c8f5a8eede4134282cb0d ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1742803397 5311557 9da84c45f5b388655502706482323571 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1742803331 2008244 5fdde56625fd87035770b6f0b063cbbe ""
-  "Fechas_importantes.aux" 1746457024.6142 695 243dae807be285b1b2ae210545361ed1 "pdflatex"
-  "Fechas_importantes.out" 1746457024.61499 383 b30f8353242045adde6ed8f5fde22e5c "pdflatex"
-  "Fechas_importantes.tex" 1746457023.37257 4458 94c9a739b5ab46119ed038044a2787ae ""
-  "Fechas_importantes.toc" 1746457024.61526 217 8ca80f2b758b46f203e80c20c7b74cb7 "pdflatex"
+  "Fechas_importantes.aux" 1747813560.38948 695 243dae807be285b1b2ae210545361ed1 "pdflatex"
+  "Fechas_importantes.out" 1747813560.38948 383 b30f8353242045adde6ed8f5fde22e5c "pdflatex"
+  "Fechas_importantes.tex" 1747813559.10712 4578 833fb221515e5d3323eb3e44654c6036 ""
+  "Fechas_importantes.toc" 1747813560.39109 217 8ca80f2b758b46f203e80c20c7b74cb7 "pdflatex"
   "imagenes/escudo.png" 1736848905.91244 9614 6d609bda8ea49b559e4d19bc914047af ""
   "imagenes/europa.png" 1736848905.91244 77684 6bcbfcf2b5b983ba4cccc09b74a6fe76 ""
   "imagenes/junta.png" 1736848905.92911 185176 aefbcd65c1988628480cb69960786c15 ""
