@@ -90,3 +90,6 @@
 \contentsline {subsection}{\numberline {3.10}20250514 - Sesión 77 - Libro S89 y S90}{31}{subsection.3.10}%
 \contentsline {subsection}{\numberline {3.11}20250515 - Sesión 78 - Libro S91 y S92}{31}{subsection.3.11}%
 \contentsline {subsection}{\numberline {3.12}20250516 - Sesión 79 - Libro S93 y S94}{31}{subsection.3.12}%
+\contentsline {subsection}{\numberline {3.13}20250521 - Sesión 80 - Libro S95 y S96}{32}{subsection.3.13}%
+\contentsline {subsection}{\numberline {3.14}20250522 - Sesión 81 - Libro S97 y S98}{32}{subsection.3.14}%
+\contentsline {subsection}{\numberline {3.15}20250523 - Sesión 82 - Libro S99 y S100}{32}{subsection.3.15}%
