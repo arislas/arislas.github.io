@@ -98,3 +98,4 @@
 \contentsline {subsection}{\numberline {3.18}20250530 - Prueba escrita}{34}{subsection.3.18}%
 \contentsline {subsection}{\numberline {3.19}20250604 - Sesión 85 - Libro S102 y S103}{34}{subsection.3.19}%
 \contentsline {subsection}{\numberline {3.20}20250606 - Sesión 86 - Libro S104 y S105}{34}{subsection.3.20}%
+\contentsline {subsection}{\numberline {3.21}20250619 - Prueba escrita}{35}{subsection.3.21}%
